@@ -7,8 +7,8 @@ import { buildIndex, buildGraph, findPlaces, resolvePlace, planTrip, reachableFr
 import { parseTrip, cleanSinglePlace } from "./parse.js";
 import { voiceSupport, VoiceSession, speak, stopSpeaking, hasVoiceFor } from "./voice.js";
 import { createStore } from "./store.js";
-import { mountJourneyMap } from "./map.js";
-import { busSVG, paintFor, heroScene, logoSVG, honk, PAINTS } from "./art.js";
+import { mountJourneyMap, mountNetworkMap } from "./map.js";
+import { routeColor, logoSVG } from "./art.js";
 
 /* ═════════════ state ═════════════ */
 
@@ -66,10 +66,14 @@ function render() {
   document.title = `${t("app")} — ${t("tagline")}`;
   $("#skip").textContent = t("skip");
   const brand = h("a", { class: "brand", href: "#/", "aria-label": t("app") });
-  brand.innerHTML = logoSVG(38);
+  brand.innerHTML = logoSVG(30);
   brand.append(h("span", { class: "brand__name", text: t("app") }));
   ui.results = h("section", { class: "results", "aria-live": "polite" });
-  ui.home = h("div", { class: "home" }, buildHero(), h("div", { class: "deck" }, buildSearch(), ui.results, buildExtras()));
+  ui.mapbox = h("div", { class: "mapbox-fill", style: "position:absolute;inset:0" });
+  ui.mapMode = null;
+  ui.home = h("div", { class: "home" },
+    h("div", { class: "mapstage" }, ui.mapbox),
+    h("div", { class: "panel" }, h("div", { class: "panel__in" }, buildSearch(), ui.results, buildExtras())));
   ui.page = h("div", { class: "page", hidden: true });
   ui.live = h("div", { class: "sr", role: "status", "aria-live": "polite" });
   ui.banner = h("div", { class: "banner-slot" });
@@ -104,58 +108,35 @@ function toggleLang() {
 
 /* ═════════════ the hero: street scene + the question ═════════════ */
 
-function buildHero() {
-  ui.ask = h("h1", { class: "ask", id: "ask", text: t("ask") });
-  ui.askSub = h("p", { class: "ask__sub", text: t("askSub") });
-  const hero = h("div", { class: "hero" });
-  hero.innerHTML = heroScene();
-  hero.append(h("div", { class: "hero__in" }, ui.ask, ui.askSub));
-  const bus = hero.querySelector(".sc-hero");
-  let timer;
-  bus.addEventListener("click", () => {
-    honk();
-    bus.classList.remove("is-honk");
-    void bus.offsetWidth;
-    bus.classList.add("is-honk");
-    clearTimeout(timer);
-    timer = setTimeout(() => bus.classList.remove("is-honk"), 1100);
-  });
-  bus.querySelector("[data-honk]").textContent = t("honk");
-  // the painted name on the hero bus
-  const name = bus.querySelector(".b-name");
-  if (name) name.textContent = t("app");
-  return hero;
-}
-
 function buildExtras() {
   const trips = QUICK.map(([a, b]) => [S.index.byRef.get(a), S.index.byRef.get(b)]).filter(([a, b]) => a && b);
   return h("div", { class: "extras" },
-    h("div", { class: "quick" }, h("p", { class: "quick__t", text: t("tryThese") }),
-      h("div", { class: "quick__row" }, ...trips.map(([a, b]) => h("button", { class: "trip", type: "button", onclick: () => { setPlace("from", a); setPlace("to", b); submitSearch(); } },
-        placeName(a), icon("arrow", { size: 16 }), placeName(b))))),
-    h("ol", { class: "how" }, ...[1, 2, 3].map((i) => h("li", {}, h("span", { class: "how__n", text: n(i) }), t("how" + i)))));
+    h("p", { class: "quick__t", text: t("tryThese") }),
+    h("div", { class: "quick__row" }, ...trips.map(([a, b]) => h("button", { class: "trip", type: "button", onclick: () => { setPlace("from", a); setPlace("to", b); submitSearch(); } },
+      placeName(a), icon("arrow", { size: 15 }), placeName(b)))));
 }
 
 /* ═════════════ search panel ═════════════ */
 
 function buildSearch() {
+  ui.ask = h("h1", { class: "ask", id: "ask", text: t("ask") });
+  ui.askSub = h("p", { class: "ask__sub", text: t("askSub") });
+  const wave = h("div", { class: "wave", "aria-hidden": "true" }, ...Array.from({ length: 28 }, () => h("i")));
   const from = makeField("from"), to = makeField("to");
   ui.fields = { from, to };
   ui.locBtn = h("button", { class: "field__act", type: "button", "aria-label": t("useLocation"), title: t("useLocation"), onclick: useMyLocation }, icon("locate", { size: 22 }));
   from.box.append(ui.locBtn);
-  const swap = h("button", { class: "swap", type: "button", "aria-label": t("swap"), title: t("swap"), onclick: swapPlaces }, icon("swap", { size: 18 }));
+  const swap = h("button", { class: "swap", type: "button", "aria-label": t("swap"), title: t("swap"), onclick: swapPlaces }, icon("swap", { size: 16 }));
 
-  ui.mic = h("button", { class: "mic", type: "button", "aria-label": t("speakAria"), "aria-pressed": "false", onclick: onMic }, h("span", { class: "mic__icon" }, icon("mic", { size: 32 })));
+  ui.mic = h("button", { class: "mic", type: "button", "aria-label": t("speakAria"), "aria-pressed": "false", onclick: onMic }, h("span", { class: "mic__icon" }, icon("mic", { size: 28 })));
   ui.micLabel = h("span", { class: "mic__label", "aria-hidden": "true", text: t("speak") });
-  const ride = h("span", { class: "find__ride" });
-  ride.innerHTML = busSVG({ paint: PAINTS[2], riders: 3, mode: "live" });
-  ui.find = h("button", { class: "find", type: "submit", "data-going": t("finding") }, h("span", { class: "find__label", text: t("find") }), h("span", { class: "find__trail" }), ride);
+  ui.find = h("button", { class: "find", type: "submit", "data-going": t("finding") }, h("span", { class: "find__label", text: t("find") }));
 
   ui.voiceZone = h("div", { class: "voice-zone" });
   const form = h("form", { class: "form", novalidate: true, onsubmit: (e) => { e.preventDefault(); submitSearch(); } },
     h("div", { class: "fields" }, from.el, swap, to.el),
     h("div", { class: "go" }, h("div", { class: "mic-wrap" }, ui.mic, ui.micLabel), ui.find));
-  return h("section", { class: "search", "aria-labelledby": "ask" }, form, ui.voiceZone);
+  return h("section", { class: "search", "aria-labelledby": "ask" }, h("div", {}, ui.ask, ui.askSub, wave), form, ui.voiceZone);
 }
 
 function makeField(side) {
@@ -359,7 +340,7 @@ function refreshVoiceUI() {
   ui.mic.classList.toggle("is-live", live);
   ui.mic.setAttribute("aria-pressed", String(live));
   ui.mic.setAttribute("aria-label", live ? t("stop") : t("speakAria"));
-  ui.mic.querySelector(".mic__icon").replaceChildren(icon(live ? "stop" : "mic", { size: 32 }));
+  ui.mic.querySelector(".mic__icon").replaceChildren(icon(live ? "stop" : "mic", { size: 28 }));
   ui.micLabel.textContent = live ? t("stop") : t("speak");
   if (live) ui.live.textContent = t("listening");
   paintAsk();
@@ -485,7 +466,7 @@ async function submitSearch() {
   if (btn && !reducedMotion() && !btn.classList.contains("is-going")) {
     btn.style.setProperty("--w", `${btn.clientWidth}px`);
     btn.classList.add("is-going");
-    await sleep(800);
+    await sleep(700);
     btn.classList.remove("is-going");
   }
   const hash = `#/go?from=${encodeURIComponent(S.from.ref)}&to=${encodeURIComponent(S.to.ref)}`;
@@ -500,13 +481,14 @@ async function runFromHash(q) {
   const from = await get(q.get("from") || ""), to = await get(q.get("to") || "");
   if (from) setPlace("from", from);
   if (to) setPlace("to", to);
-  if (!from || !to) { ui.results.replaceChildren(); paintHome(); return; }
+  if (!from || !to) { ui.results.replaceChildren(); paintHome(); showNetworkMap(); return; }
   V.pending = null; V.error = null;
   renderVoiceZone();
   const wasCompact = ui.home.classList.contains("has-results");
   S.plan = { ...planTrip(S.graph, S.settings, from, to), from, to };
   renderResults(S.plan);
   paintHome();
+  if (ui.maps.length) showTrip(0); else showNetworkMap();
   document.title = `${placeName(from)} → ${placeName(to)} · ${t("app")}`;
   ui.resultsTitle?.focus({ preventScroll: true });
   if (!matchMedia("(min-width: 1000px)").matches) {
@@ -514,6 +496,34 @@ async function runFromHash(q) {
     ui.results.scrollIntoView({ behavior: reducedMotion() ? "auto" : "smooth", block: "start" });
   }
   refreshLive();
+}
+
+/* ───── the map behind the sheet ───── */
+
+const tileOpts = () => ({
+  tileUrl: matchMedia("(prefers-color-scheme: dark)").matches && document.documentElement.dataset.theme !== "light" ? CONFIG.tileUrlDark : CONFIG.tileUrl,
+  attribution: CONFIG.tileAttribution, attributionUrl: CONFIG.tileAttributionUrl,
+});
+let stopMap = null, netCache = null;
+function setMap(mount) { stopMap?.(); ui.mapbox.replaceChildren(); stopMap = mount(); }
+
+let stopDots = null;
+const networkStops = () => (stopDots ||= S.stops.filter((x) => S.graph.stopRoutes.has(x.id)).map((x) => ({ lat: x.lat, lng: x.lng })));
+function showNetworkMap() {
+  if (ui.mapMode === "net") return;
+  ui.mapMode = "net";
+  setMap(() => mountNetworkMap(ui.mapbox, { center: { lat: 23.775, lng: 90.395 }, stops: networkStops() }, tileOpts()));
+}
+function showTrip(i) {
+  const m = ui.maps[i];
+  if (!m) return;
+  ui.mapMode = "trip" + i;
+  setMap(() => mountJourneyMap(ui.mapbox, m.data, { ...tileOpts(), label: t("mapTripLabel"), names: m.names, legend: { bus: t("legendBus"), walk: t("legendWalk") }, still: reducedMotion(), padTop: 70, padBottom: 66 }));
+}
+function inlineMap(data, names) {
+  const box = h("div", { class: "mapbox", role: "img", "aria-label": t("mapTripLabel") });
+  mountJourneyMap(box, data, { ...tileOpts(), label: t("mapTripLabel"), names, legend: { bus: t("legendBus"), walk: t("legendWalk") }, still: reducedMotion(), padTop: 60, padBottom: 50 });
+  return box;
 }
 
 /* ═════════════ results ═════════════ */
@@ -525,33 +535,29 @@ function renderResults(plan) {
   const R = ui.results;
   R.replaceChildren();
   ui.resultsTitle = null;
+  ui.maps = [];
   const found = plan.direct.length || plan.change.length;
   if (!found && plan.reason !== "walk") { R.append(emptyState(plan)); return; }
   R.append(journeyCard(plan));
   if (plan.reason === "walk") { R.append(walkCard(plan), footnote()); return; }
   plan.direct.forEach((g, i) => R.append(groupCard(plan, g, i, "direct")));
-  if (plan.change.length) plan.change.forEach((g, i) => R.append(groupCard(plan, g, i, "change")));
+  plan.change.forEach((g, i) => R.append(groupCard(plan, g, i, "change")));
   R.append(footnote());
 }
 
 /** Fare, ride time and bus count for the headline. */
 function tripStats(plan) {
   if (plan.direct.length) {
-    const buses = plan.direct[0].buses, fares = buses.map((b) => b.fare);
+    const buses = plan.direct[0].buses, fares = buses.map((b) => b.fare), mins = buses.map((b) => roundMin(b.rideMin));
     const routes = new Set(plan.direct.flatMap((g) => g.buses.map((b) => b.route.id)));
-    const mins = buses.map((b) => roundMin(b.rideMin));
-    return { kind: "direct", lo: Math.min(...fares), hi: Math.max(...fares), rideLo: Math.min(...mins), rideHi: Math.max(...mins), count: routes.size, lead: buses[0].route };
+    return { kind: "direct", lo: Math.min(...fares), hi: Math.max(...fares), rideLo: Math.min(...mins), rideHi: Math.max(...mins), count: routes.size };
   }
   const g = plan.change[0], f1 = g.buses1.map((b) => b.fare), f2 = g.buses2.map((b) => b.fare);
-  return {
-    kind: "change", lo: Math.min(...f1) + Math.min(...f2), hi: Math.max(...f1) + Math.max(...f2),
-    rideLo: Math.min(...g.buses1.map((b) => roundMin(b.rideMin))) + Math.min(...g.buses2.map((b) => roundMin(b.rideMin))),
-    rideHi: Math.max(...g.buses1.map((b) => roundMin(b.rideMin))) + Math.max(...g.buses2.map((b) => roundMin(b.rideMin))),
-    count: g.buses1.length + g.buses2.length, lead: g.buses1[0].route,
-  };
+  const m1 = g.buses1.map((b) => roundMin(b.rideMin)), m2 = g.buses2.map((b) => roundMin(b.rideMin));
+  return { kind: "change", lo: Math.min(...f1) + Math.min(...f2), hi: Math.max(...f1) + Math.max(...f2), rideLo: Math.min(...m1) + Math.min(...m2), rideHi: Math.max(...m1) + Math.max(...m2), count: g.buses1.length + g.buses2.length };
 }
 
-/** The dark card at the top: from → to, a bus on the road, and the one-line answer. */
+/** The answer in one glance: direct / change / just walk, then fare, time and bus count. */
 function journeyCard(plan) {
   const walk = plan.reason === "walk";
   const st = walk ? null : tripStats(plan);
@@ -559,26 +565,16 @@ function journeyCard(plan) {
   const title = t(kind === "direct" ? "verdictDirect" : kind === "change" ? "verdictChange" : "verdictWalk");
   const sub = kind === "direct" ? t("verdictDirectSub") : kind === "change" ? t("verdictChangeSub") : t("verdictWalkSub", plan.walk.min, plan.walk.distM);
   ui.resultsTitle = h("h2", { tabindex: "-1" }, h("span", { class: "sr", text: `${fromLabel(plan.from)} → ${placeName(plan.to)}: ` }), title);
-
-  const vehicle = h("div", { class: "journey__bus" });
-  if (walk) { vehicle.classList.add("journey__walker"); vehicle.append(icon("walk", { size: 20 })); }
-  else vehicle.innerHTML = busSVG({ paint: paintFor(st.lead.id), riders: 4, mode: "live" });
-
+  const range = (a, b) => (a === b ? n(a) : `${n(a)}–${n(b)}`);
+  const fact = (value, label) => h("div", { class: "fact" }, h("b", { class: "num", text: value }), h("small", { text: label }));
   const facts = walk
-    ? [h("span", { class: "fact fact--fare" }, icon("walk", { size: 16 }), h("b", { class: "num", text: t("minutes", plan.walk.min) }))]
-    : [h("span", { class: "fact fact--fare" }, h("b", { class: "num", text: t("fareRange", st.lo, st.hi) }), t("officialFare")),
-      h("span", { class: "fact" }, icon("clock", { size: 16 }), h("b", { class: "num", text: st.rideLo === st.rideHi ? t("minutes", st.rideLo) : t("minRange", st.rideLo, st.rideHi) })),
-      h("span", { class: "fact" }, icon("bus", { size: 16 }), h("b", { text: t("busesN", st.count) }))];
-
+    ? h("div", { class: "facts facts--one" }, fact(n(plan.walk.min), t("factWalk")))
+    : h("div", { class: "facts" }, fact(t("fareRange", st.lo, st.hi), t("officialFare")), fact(range(st.rideLo, st.rideHi), t("factTime")), fact(n(st.count), t("factBuses")));
   const card = h("div", { class: "journey" },
-    h("div", { class: "journey__ends" },
-      h("div", { class: "journey__end" }, h("small", { text: t("from") }), h("b", { text: fromLabel(plan.from) })),
-      h("div", { class: "journey__end journey__end--to" }, h("small", { text: t("to") }), h("b", { text: placeName(plan.to) }))),
-    h("div", { class: "journey__road", "aria-hidden": "true" }, h("span", { class: "journey__a" }), h("span", { class: "journey__b" }), vehicle),
     h("div", { class: "verdict" },
-      h("span", { class: `verdict__ok${kind === "direct" ? "" : " verdict__ok--change"}`, "aria-hidden": "true" }, icon(kind === "change" ? "refresh" : kind === "walk" ? "walk" : "check", { size: 22 })),
+      h("span", { class: `verdict__ok${kind === "change" ? " verdict__ok--change" : ""}`, "aria-hidden": "true" }, icon(kind === "change" ? "refresh" : kind === "walk" ? "walk" : "check", { size: 18 })),
       h("div", {}, ui.resultsTitle, h("p", { text: sub }))),
-    h("div", { class: "facts" }, ...facts));
+    facts);
   if (!walk) {
     const listen = h("button", { class: "chip journey__listen", type: "button", hidden: true, onclick: (e) => readAloud(e.currentTarget) }, icon("speaker", { size: 18 }), t("listen"));
     card.append(listen);
@@ -594,15 +590,15 @@ const MK = { start: "pin", on: "bus", off: "flag", end: "flag", mid: "refresh" }
 function groupCard(plan, g, gi, kind) {
   const direct = kind === "direct";
   const ride1 = direct ? g.buses : g.buses1;
-  const c1 = paintFor(ride1[0].route.id).b1;
-  const c2 = direct ? c1 : paintFor(g.buses2[0].route.id).b1;
+  const c1 = "#0b7a52"; // first bus ride; a second ride (after a change) is blue
+  const c2 = direct ? c1 : "#1f6feb";
   let i = 0;
   const rows = [];
 
   const stopRow = (mk, label, who, { up = "none", down = "none", cu = c1, cd = c1 } = {}) => {
     const link = who.id && S.graph.stopsById.has(who.id) && who.kind !== "area" && who.kind !== "me";
     return h("div", { class: "node node--stop", style: `--i:${i++};--cu:${cu};--cd:${cd}`, "data-up": up, "data-down": down },
-      h("div", { class: "rl" }, h("span", { class: `mk mk--${mk}`, "aria-hidden": "true" }, icon(MK[mk], { size: 20 }))),
+      h("div", { class: "rl" }, h("span", { class: `mk mk--${mk}`, "aria-hidden": "true" }, icon(MK[mk], { size: 14 }))),
       h("div", { class: "node__body" }, h("span", { class: "node__lab", text: label }),
         link ? h("a", { class: "node__name", href: `#/stop/${who.id}`, text: placeName(who) }) : h("span", { class: "node__name", text: fromLabel(who) })));
   };
@@ -612,9 +608,9 @@ function groupCard(plan, g, gi, kind) {
     h("b", { text: leg.mode === "walk" ? t("walk", leg.min, leg.distM) : t("rickshaw", leg.min) }),
     hint ? h("span", { class: "leg__hint", text: hint }) : leg.mode === "rickshaw" ? h("span", { class: "leg__hint", text: t("rickshawNote") }) : null));
   const rideRow = (legs, color, groupAlight) => h("div", { class: "node node--leg node--ride", style: `--i:${i++};--c:${color}`, "data-kind": "ride" },
-    h("div", { class: "rl" }, h("span", { class: "token", "aria-hidden": "true" }, icon("bus", { size: 16 }))),
+    h("div", { class: "rl" }),
     h("div", { class: "node__body" },
-      h("p", { class: "takeany" }, icon("bus", { size: 20 }), legs.length > 1 ? t("takeAny") : t("takeOne")),
+      h("p", { class: "takeany" }, icon("bus", { size: 18 }), legs.length > 1 ? t("takeAny") : t("takeOne")),
       busList(legs, groupAlight)));
 
   const hint = plan.from.kind === "area" ? (getLang() === "bn" ? plan.from.data?.hint_text_bn : plan.from.data?.hint_text_en) : "";
@@ -638,62 +634,42 @@ function groupCard(plan, g, gi, kind) {
   if (walkOut) rows.push(walkLeg(g.last, ""), stopRow("end", t("arrive"), plan.to, { up: "walk" }));
 
   const path = direct ? g.buses[0].stopIds.map(stopById) : [...g.buses1[0].stopIds.map(stopById), ...g.buses2[0].stopIds.map(stopById)];
-  const card = h("section", { class: "group", style: `--g:${gi}` },
+  const idx = ui.maps.length;
+  ui.maps.push({
+    data: { you: walkIn ? plan.from : null, dest: walkOut ? plan.to : null, board: g.board, alight: g.alight, path, color: c1, accuracy: plan.from.kind === "me" ? plan.from.acc : 0 },
+    names: { board: placeName(g.board), alight: placeName(g.alight) },
+  });
+  return h("section", { class: "group", style: `--g:${gi}` },
     gi > 0 ? h("span", { class: "group__tag", text: t("optionN", gi + 1) }) : null,
-    h("div", { class: "rail", style: `--c:${c1}` }, ...rows),
-    mapSection({
-      you: walkIn ? plan.from : null, dest: walkOut ? plan.to : null, board: g.board, alight: g.alight, path, color: c1,
-      accuracy: plan.from.kind === "me" ? plan.from.acc : 0,
-    }, gi === 0));
-  return card;
-}
-
-/** "See on map" — drawn only when shown, and only once the box has its real size. */
-function mapSection(data, open) {
-  const box = h("div", { class: "mapbox", role: "img", "aria-label": t("mapTripLabel"), hidden: !open });
-  const label = h("span", { text: open ? t("hideMap") : t("showMap") });
-  const btn = h("button", { class: "mapbtn", type: "button", "aria-expanded": String(open), onclick: () => {
-    const show = box.hidden;
-    box.hidden = !show;
-    btn.setAttribute("aria-expanded", String(show));
-    label.textContent = show ? t("hideMap") : t("showMap");
-  } }, icon("map", { size: 20 }), label, icon("chevron", { size: 18 }));
-  const opts = {
-    tileUrl: CONFIG.tileUrl, attribution: CONFIG.tileAttribution, attributionUrl: CONFIG.tileAttributionUrl, label: t("mapTripLabel"),
-    names: data.board && data.alight ? { board: placeName(data.board), alight: placeName(data.alight) } : { board: "", alight: "" },
-    legend: { bus: t("legendBus"), walk: t("legendWalk") }, still: reducedMotion(),
-  };
-  mountJourneyMap(box, data, opts);
-  return h("div", { class: "mapwrap" }, btn, box);
+    h("div", { class: "rail" }, ...rows),
+    idx > 0 ? h("button", { class: "mapbtn", type: "button", onclick: () => { showTrip(idx); window.scrollTo({ top: 0, behavior: reducedMotion() ? "auto" : "smooth" }); } }, icon("map", { size: 18 }), t("showMap")) : null);
 }
 
 function walkCard(plan) {
   const a = plan.from, b = plan.to, leg = plan.walk;
   const sRow = (mk, label, name, i, down, up) => h("div", { class: "node node--stop", style: `--i:${i}`, "data-up": up, "data-down": down },
-    h("div", { class: "rl" }, h("span", { class: `mk mk--${mk}`, "aria-hidden": "true" }, icon(MK[mk], { size: 20 }))),
+    h("div", { class: "rl" }, h("span", { class: `mk mk--${mk}`, "aria-hidden": "true" }, icon(MK[mk], { size: 14 }))),
     h("div", { class: "node__body" }, h("span", { class: "node__lab", text: label }), h("span", { class: "node__name", text: name })));
+  ui.maps.push({ data: { walkOnly: true, you: a, dest: b, accuracy: a.kind === "me" ? a.acc : 0 }, names: { board: "", alight: "" } });
   return h("section", { class: "group", style: "--g:0" },
     h("div", { class: "rail" },
       sRow("start", t("startHere"), fromLabel(a), 0, "walk", "none"),
       h("div", { class: "node node--leg", style: "--i:1", "data-kind": "walk" }, h("div", { class: "rl" }),
         h("div", { class: "node__body" }, h("div", { class: "leg" }, icon("walk", { size: 18 }), h("b", { text: t("walk", leg.min, leg.distM) })))),
-      sRow("end", t("arrive"), placeName(b), 2, "none", "walk")),
-    mapSection({ walkOnly: true, you: a, dest: b, accuracy: a.kind === "me" ? a.acc : 0 }, true));
+      sRow("end", t("arrive"), placeName(b), 2, "none", "walk")));
 }
 
-/* ───── bus cards ───── */
+/* ───── bus rows ───── */
 
 const SHOW_BUSES = 5;
 const hoursText = (r) => { const [a, b] = r.hours.split("–"); return t("runs", fmtClock(a), fmtClock(b)); };
 
-/** A painted bus that drives into its card, its name, and (optionally) the fare. */
-function busCard({ route, href, delay = 0, fare = null, lines = [], foot = [] }) {
-  const art = h("div", { class: "bus__art" });
-  art.innerHTML = `<div class="drive-in" style="--delay:${delay.toFixed(2)}s">${busSVG({ paint: paintFor(route.id), riders: 2 + (hashOf(route.id) % 4), mode: "drive" })}</div>`;
-  return h("a", { class: "bus", href }, art,
-    h("span", { class: "bus__main" }, h("span", { class: "bus__name", text: routeName(route) }), ...lines,
-      fare != null ? h("span", { class: "bus__fare" }, h("b", { class: "num", text: t("taka", fare) }), h("small", { text: t("officialFare") })) : null),
-    foot.some(Boolean) ? h("span", { class: "bus__foot" }, ...foot) : null);
+/** One bus: its colour badge, its name, and (optionally) the official fare. */
+function busCard({ route, href, delay = 0, fare = null, lines = [] }) {
+  return h("a", { class: "bus", href, style: `--delay:${delay.toFixed(2)}s` },
+    h("span", { class: "badge", style: `--c:${routeColor(route.id)}`, "aria-hidden": "true" }, icon("bus", { size: 22 })),
+    h("span", { class: "bus__main" }, h("span", { class: "bus__name", text: routeName(route) }), ...lines),
+    fare != null ? h("span", { class: "bus__fare" }, h("b", { class: "num", text: t("taka", fare) }), h("small", { text: t("officialFare") })) : null);
 }
 
 function busList(legs, groupAlight = null) {
@@ -703,13 +679,13 @@ function busList(legs, groupAlight = null) {
   const item = (leg, k) => {
     const r = leg.route;
     return h("li", {}, busCard({
-      route: r, href: `#/bus/${r.id}?b=${leg.board.id}&a=${leg.alight.id}`, delay: 0.7 + k * 0.14, fare: leg.fare,
+      route: r, href: `#/bus/${r.id}?b=${leg.board.id}&a=${leg.alight.id}`, delay: 0.35 + Math.min(k, 8) * 0.07, fare: leg.fare,
       lines: [
         counts.get(routeName(r)) > 1 ? h("span", { class: "bus__sub", text: ends(r) }) : null,
         groupAlight && leg.alight.id !== groupAlight.id ? h("span", { class: "bus__sub bus__off", text: `${t("getOff")}: ${placeName(leg.alight)}` }) : null,
+        h("span", { class: "bus__sub" }, icon("clock", { size: 14 }), h("span", { text: t("minutes", roundMin(leg.rideMin)) }), r.hours ? h("span", { text: hoursText(r) }) : null),
+        h("span", { class: "bus__seen", hidden: true, dataset: { route: r.id, stop: leg.board.id } }),
       ],
-      foot: [h("span", { class: "bus__time" }, icon("clock", { size: 15 }), t("minutes", roundMin(leg.rideMin))), r.hours ? h("span", { class: "bus__hours", text: hoursText(r) }) : null,
-        h("span", { class: "bus__seen", hidden: true, dataset: { route: r.id, stop: leg.board.id } })],
     }));
   };
   const list = h("ul", { class: "buses", "aria-label": t("busCount", legs.length) }, ...legs.slice(0, SHOW_BUSES).map(item));
@@ -724,10 +700,9 @@ function busList(legs, groupAlight = null) {
 }
 
 function emptyState(plan) {
-  const art = h("div", { class: "empty__art" });
-  art.innerHTML = busSVG({ paint: PAINTS[0], riders: 0, mode: "still" }) + '<span class="empty__q" aria-hidden="true">?</span>';
-  if (plan.reason === "same") return h("div", { class: "empty" }, art, h("h3", { text: t("sameSpot") }));
-  if (plan.reason?.startsWith("no-stop-near")) return h("div", { class: "empty" }, art, h("h3", { text: t("noBusTitle") }), h("p", { text: t("noStopNear") }));
+  const ico = h("span", { class: "empty__ico", "aria-hidden": "true" }, icon("bus", { size: 28 }));
+  if (plan.reason === "same") return h("div", { class: "empty" }, ico, h("h3", { text: t("sameSpot") }));
+  if (plan.reason?.startsWith("no-stop-near")) return h("div", { class: "empty" }, ico, h("h3", { text: t("noBusTitle") }), h("p", { class: "muted", text: t("noStopNear") }));
   const anchor = plan.from.kind === "stop" ? plan.from : nearestStop(plan.from);
   const reach = anchor ? reachableFrom(S.graph, anchor.id, 8) : [];
   const btn = h("button", { class: "chip", type: "button", onclick: async () => {
@@ -736,7 +711,7 @@ function emptyState(plan) {
   } }, t("noTripTell"));
   const title = h("h3", { tabindex: "-1", text: t("noTripTitle") });
   ui.resultsTitle = title;
-  return h("div", { class: "empty" }, art, title, h("p", { class: "muted", text: t("noTripBody") }), btn,
+  return h("div", { class: "empty" }, ico, title, h("p", { class: "muted", text: t("noTripBody") }), btn,
     reach.length ? h("div", {}, h("p", { class: "muted", text: t("reachFrom", placeName(anchor)) }),
       h("div", { class: "chips" }, ...reach.map((s) => h("button", { class: "chip chip--quiet", type: "button", onclick: () => { setPlace("to", S.index.byRef.get("s:" + s.id)); submitSearch(); } }, placeName(s))))) : null);
 }
@@ -884,29 +859,17 @@ function busPage(id, q) {
   if (!r) return location.replace("#/");
   const bi = r.pos.get(q.get("b")), ai = r.pos.get(q.get("a"));
   const hasTrip = bi !== undefined && ai !== undefined && bi !== ai;
-  const paint = paintFor(r.id), color = paint.b1;
+  const color = routeColor(r.id);
   const first = stopById(r.stops[0]), last = stopById(r.stops[r.stops.length - 1]);
-
-  // the big painted bus: the board on its side reads like a real destination sign
-  const big = h("button", { class: "busbig__bus", type: "button", "aria-label": routeName(r) });
-  big.innerHTML = `<div class="drive-in">${busSVG({ paint, name: `${placeName(first)} – ${placeName(last)}`, riders: 5, mode: "drive" })}</div><span class="honk">${t("honk")}</span>`;
-  let timer;
-  big.addEventListener("click", () => {
-    honk();
-    big.classList.remove("is-honk");
-    void big.offsetWidth;
-    big.classList.add("is-honk");
-    clearTimeout(timer);
-    timer = setTimeout(() => big.classList.remove("is-honk"), 1100);
-  });
   const nodes = [
-    h("h1", { text: routeName(r) }),
-    h("p", { class: "muted", text: routeNameAlt(r) }),
-    h("div", { class: "busbig" }, h("div", { class: "busbig__road" }, big),
-      h("div", { class: "busbig__meta" },
-        h("span", { class: "tag", text: r.seating === "seating" ? t("seating") : t("semiSeating") }),
-        r.hours ? h("span", { class: "tag", text: hoursText(r) }) : null,
-        h("span", { class: "tag", text: t("stopsN", r.stops.length) }))),
+    h("div", { class: "buspage" },
+      h("span", { class: "badge badge--lg", style: `--c:${color}`, "aria-hidden": "true" }, icon("bus", { size: 32 })),
+      h("div", {}, h("h1", { text: routeName(r) }), h("p", { class: "muted", text: `${placeName(first)} – ${placeName(last)}` }))),
+    h("div", { class: "buspage__meta" },
+      h("span", { class: "tag", text: r.seating === "seating" ? t("seating") : t("semiSeating") }),
+      r.hours ? h("span", { class: "tag", text: hoursText(r) }) : null,
+      h("span", { class: "tag", text: t("stopsN", r.stops.length) }),
+      routeNameAlt(r) !== routeName(r) ? h("span", { class: "tag", text: routeNameAlt(r) }) : null),
   ];
   if (hasTrip) {
     const board = stopById(r.stops[bi]), alight = stopById(r.stops[ai]);
@@ -923,28 +886,19 @@ function busPage(id, q) {
   }
   const all = r.stops.map(stopById);
   const lo = hasTrip ? Math.min(bi, ai) : -1, hi = hasTrip ? Math.max(bi, ai) : -1;
-  nodes.push(mapSection({
+  nodes.push(inlineMap({
     board: hasTrip ? all[bi] : first, alight: hasTrip ? all[ai] : last, color,
     path: hasTrip ? all.slice(lo, hi + 1) : all, base: hasTrip ? all : null,
-  }, true));
+  }, { board: placeName(hasTrip ? all[bi] : first), alight: placeName(hasTrip ? all[ai] : last) }));
 
-  const stopList = h("ol", { class: "stoplist", style: `--c:${color}` },
-    ...r.stops.map((sid, i) => h("li", { class: i === bi || i === ai ? "is-end" : i > lo && i < hi ? "is-on" : "" },
-      h("a", { href: `#/stop/${sid}`, text: placeName(stopById(sid)) }))));
-  nodes.push(h("h2", { class: "h2", text: t("allStops") }), stopList,
+  nodes.push(h("h2", { class: "h2", text: t("allStops") }),
+    h("ol", { class: "stoplist", style: `--c:${color}` },
+      ...r.stops.map((sid, i) => h("li", { class: i === bi || i === ai ? "is-end" : i > lo && i < hi ? "is-on" : "" },
+        h("a", { href: `#/stop/${sid}`, text: placeName(stopById(sid)) })))),
     h("p", { class: "footnote" },
       h("span", { class: "tag", text: r.verified ? t("verified") : t("unverified") }), " ", t("sourceNote"), " · ",
       h("button", { class: "textlink", type: "button", onclick: () => openReport(r, hasTrip ? { board: q.get("b"), alight: q.get("a") } : null) }, t("reportProblem"))));
   showPage(nodes, routeName(r));
-  if (hasTrip && !reducedMotion()) {
-    // a little bus rides the highlighted stretch of the stop list
-    requestAnimationFrame(() => {
-      const li = [...stopList.children], mid = (el) => el.offsetTop + el.offsetHeight / 2 - 14;
-      stopList.style.setProperty("--y0", `${mid(li[lo])}px`);
-      stopList.style.setProperty("--y1", `${mid(li[hi])}px`);
-      stopList.prepend(h("span", { class: "token", "aria-hidden": "true" }, icon("bus", { size: 16 })));
-    });
-  }
 }
 
 function stopPage(id) {
@@ -978,7 +932,7 @@ async function route() {
   if (view === "" || view === "go") {
     ui.home.hidden = false; ui.page.hidden = true;
     if (view === "go") await runFromHash(q);
-    else { ui.results.replaceChildren(); S.plan = null; document.title = `${t("app")} — ${t("tagline")}`; paintHome(); }
+    else { ui.results.replaceChildren(); ui.maps = []; S.plan = null; document.title = `${t("app")} — ${t("tagline")}`; paintHome(); showNetworkMap(); }
   } else if (view === "bus") busPage(parts[1], q);
   else if (view === "stop") stopPage(parts[1]);
   else if (view === "about") textPage(t("aboutTitle"), tObj("aboutBody"));
