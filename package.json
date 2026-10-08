@@ -1,0 +1,14 @@
+{
+  "name": "kemne-jabo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Kemne Jabo (কেমনে যাবো) — Dhaka local bus guide. Static site, no build step, no dependencies.",
+  "type": "module",
+  "scripts": {
+    "start": "python -m http.server 5173 --bind 127.0.0.1",
+    "test": "node tests/run.mjs && node tests/voice-store.mjs",
+    "data": "node tools/build-data.mjs",
+    "data:offline": "node tools/build-data.mjs --offline",
+    "sql": "node tools/export-sql.mjs"
+  }
+}
