@@ -1,0 +1,447 @@
+[
+ {
+  "id": "bashundhara-road-36",
+  "name_bn": "বসুন্ধরা রোড ৩৬",
+  "name_en": "Bashundhara Road 36",
+  "aliases": [
+   "road 36 bashundhara",
+   "bashundhara 36",
+   "বসুন্ধরা ৩৬ নম্বর রোড"
+  ],
+  "lat": 23.8195,
+  "lng": 90.4375,
+  "hint_text_en": "No bus runs inside the block. Take a rickshaw to the main road, then ride to Jamuna Future Park or Kuril.",
+  "hint_text_bn": "ব্লকের ভেতরে বাস চলে না। রিকশায় মেইন রোডে এসে যমুনা ফিউচার পার্ক বা কুড়িলের বাস ধরুন।",
+  "nearest_stop_id": "bashundhara"
+ },
+ {
+  "id": "bashundhara-block-d",
+  "name_bn": "বসুন্ধরা ডি ব্লক",
+  "name_en": "Bashundhara Block D",
+  "aliases": [
+   "block d bashundhara",
+   "বসুন্ধরা ব্লক ডি"
+  ],
+  "lat": 23.8175,
+  "lng": 90.4335,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "bashundhara"
+ },
+ {
+  "id": "mirpur-dohs",
+  "name_bn": "মিরপুর ডিওএইচএস",
+  "name_en": "Mirpur DOHS",
+  "aliases": [
+   "dohs mirpur",
+   "মিরপুর ডিওএইচএস",
+   "ডিওএইচএস মিরপুর"
+  ],
+  "lat": 23.83,
+  "lng": 90.383,
+  "hint_text_en": "Walk or take a rickshaw out to the main road, then catch a bus at Mirpur 12 or Kalshi.",
+  "hint_text_bn": "মেইন রোডে বেরিয়ে মিরপুর ১২ বা কালশী থেকে বাস ধরুন।",
+  "nearest_stop_id": "kalshi"
+ },
+ {
+  "id": "senpara-parbata",
+  "name_bn": "সেনপাড়া পর্বতা",
+  "name_en": "Senpara Parbata",
+  "aliases": [
+   "senpara",
+   "সেনপাড়া"
+  ],
+  "lat": 23.81,
+  "lng": 90.373,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "mirpur-10"
+ },
+ {
+  "id": "monipur",
+  "name_bn": "মনিপুর",
+  "name_en": "Monipur",
+  "aliases": [
+   "মনিপুর"
+  ],
+  "lat": 23.804,
+  "lng": 90.358,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "mirpur-2"
+ },
+ {
+  "id": "shah-ali-bagh",
+  "name_bn": "শাহ আলী বাগ",
+  "name_en": "Shah Ali Bagh",
+  "aliases": [
+   "shah ali",
+   "mazar road mirpur",
+   "শাহ আলী"
+  ],
+  "lat": 23.813,
+  "lng": 90.359,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "proshika-moor"
+ },
+ {
+  "id": "mirpur-6",
+  "name_bn": "মিরপুর ৬ নম্বর সেকশন",
+  "name_en": "Mirpur Section 6",
+  "aliases": [
+   "mirpur 6",
+   "section 6 mirpur",
+   "মিরপুর ৬",
+   "মিরপুর সেকশন ৬"
+  ],
+  "lat": 23.816,
+  "lng": 90.36,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "proshika-moor"
+ },
+ {
+  "id": "ahmednagar",
+  "name_bn": "আহমেদনগর",
+  "name_en": "Ahmednagar",
+  "aliases": [
+   "paikpara",
+   "পাইকপাড়া",
+   "আহমদনগর"
+  ],
+  "lat": 23.819,
+  "lng": 90.372,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "purobi"
+ },
+ {
+  "id": "uttara-sector-3",
+  "name_bn": "উত্তরা সেক্টর ৩",
+  "name_en": "Uttara Sector 3",
+  "aliases": [
+   "sector 3 uttara",
+   "উত্তরা ৩ নম্বর সেক্টর",
+   "উত্তরা সেক্টর তিন"
+  ],
+  "lat": 23.859,
+  "lng": 90.394,
+  "hint_text_en": "Come out to Airport Road (Jashimuddin / Rajlokkhi side) to board.",
+  "hint_text_bn": "এয়ারপোর্ট রোডে (জসীমউদ্দীন বা রাজলক্ষ্মীর দিকে) এসে বাসে উঠুন।",
+  "nearest_stop_id": "jashimuddin"
+ },
+ {
+  "id": "uttara-sector-4",
+  "name_bn": "উত্তরা সেক্টর ৪",
+  "name_en": "Uttara Sector 4",
+  "aliases": [
+   "sector 4 uttara",
+   "উত্তরা ৪ নম্বর সেক্টর"
+  ],
+  "lat": 23.863,
+  "lng": 90.395,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "jashimuddin"
+ },
+ {
+  "id": "uttara-sector-7",
+  "name_bn": "উত্তরা সেক্টর ৭",
+  "name_en": "Uttara Sector 7",
+  "aliases": [
+   "sector 7 uttara",
+   "উত্তরা ৭ নম্বর সেক্টর"
+  ],
+  "lat": 23.872,
+  "lng": 90.393,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "house-building"
+ },
+ {
+  "id": "uttara-sector-10",
+  "name_bn": "উত্তরা সেক্টর ১০",
+  "name_en": "Uttara Sector 10",
+  "aliases": [
+   "sector 10 uttara",
+   "উত্তরা ১০ নম্বর সেক্টর"
+  ],
+  "lat": 23.876,
+  "lng": 90.386,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "dhour"
+ },
+ {
+  "id": "uttara-sector-11",
+  "name_bn": "উত্তরা সেক্টর ১১",
+  "name_en": "Uttara Sector 11",
+  "aliases": [
+   "sector 11 uttara",
+   "উত্তরা ১১ নম্বর সেক্টর"
+  ],
+  "lat": 23.881,
+  "lng": 90.39,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "dhour"
+ },
+ {
+  "id": "uttara-sector-14",
+  "name_bn": "উত্তরা সেক্টর ১৪",
+  "name_en": "Uttara Sector 14",
+  "aliases": [
+   "sector 14 uttara"
+  ],
+  "lat": 23.889,
+  "lng": 90.396,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "dhour"
+ },
+ {
+  "id": "banani-dohs",
+  "name_bn": "বনানী ডিওএইচএস",
+  "name_en": "Banani DOHS",
+  "aliases": [
+   "dohs banani",
+   "বনানী ডিওএইচএস"
+  ],
+  "lat": 23.796,
+  "lng": 90.396,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "cantonment"
+ },
+ {
+  "id": "baridhara",
+  "name_bn": "বারিধারা",
+  "name_en": "Baridhara",
+  "aliases": [
+   "baridhara diplomatic zone",
+   "bari dhara",
+   "বারিধারা ডিপ্লোমেটিক জোন"
+  ],
+  "lat": 23.801,
+  "lng": 90.42,
+  "hint_text_en": "Walk or take a rickshaw to Gulshan 2 circle, then catch a bus.",
+  "hint_text_bn": "হেঁটে বা রিকশায় গুলশান ২ নম্বর গোলচত্বরে এসে বাস ধরুন।",
+  "nearest_stop_id": "notun-bazar"
+ },
+ {
+  "id": "niketon",
+  "name_bn": "নিকেতন",
+  "name_en": "Niketon",
+  "aliases": [
+   "niketan",
+   "নিকেতন"
+  ],
+  "lat": 23.777,
+  "lng": 90.417,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "gulshan-1"
+ },
+ {
+  "id": "mohakhali-dohs",
+  "name_bn": "মহাখালী ডিওএইচএস",
+  "name_en": "Mohakhali DOHS",
+  "aliases": [
+   "dohs mohakhali"
+  ],
+  "lat": 23.783,
+  "lng": 90.396,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "mohakhali"
+ },
+ {
+  "id": "lalmatia",
+  "name_bn": "লালমাটিয়া",
+  "name_en": "Lalmatia",
+  "aliases": [
+   "lalmatiya",
+   "লালমাটিয়া"
+  ],
+  "lat": 23.7575,
+  "lng": 90.37,
+  "hint_text_en": "Take a rickshaw to Asad Gate or Dhanmondi 27 main road, then board.",
+  "hint_text_bn": "রিকশায় আসাদ গেট বা ধানমন্ডি ২৭-এর মেইন রোডে এসে বাস ধরুন।",
+  "nearest_stop_id": "shankar"
+ },
+ {
+  "id": "dhanmondi-road-8",
+  "name_bn": "ধানমন্ডি ৮/এ",
+  "name_en": "Dhanmondi Road 8A",
+  "aliases": [
+   "dhanmondi 8a",
+   "dhanmondi road 8"
+  ],
+  "lat": 23.75,
+  "lng": 90.372,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "jakir-hossain-road"
+ },
+ {
+  "id": "tajmahal-road",
+  "name_bn": "তাজমহল রোড",
+  "name_en": "Taj Mahal Road",
+  "aliases": [
+   "tajmahal road mohammadpur",
+   "তাজমহল রোড মোহাম্মদপুর"
+  ],
+  "lat": 23.764,
+  "lng": 90.362,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "tajmahal-road"
+ },
+ {
+  "id": "hazaribagh",
+  "name_bn": "হাজারীবাগ",
+  "name_en": "Hazaribagh",
+  "aliases": [
+   "hazaribag",
+   "হাজারিবাগ"
+  ],
+  "lat": 23.724,
+  "lng": 90.368,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "kamrangirchar"
+ },
+ {
+  "id": "lalbagh",
+  "name_bn": "লালবাগ",
+  "name_en": "Lalbagh",
+  "aliases": [
+   "lalbagh fort",
+   "lalbag",
+   "লালবাগ কেল্লা",
+   "লালবাগ"
+  ],
+  "lat": 23.719,
+  "lng": 90.388,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "dhakeshwari"
+ },
+ {
+  "id": "chawkbazar",
+  "name_bn": "চকবাজার",
+  "name_en": "Chawkbazar",
+  "aliases": [
+   "chowkbazar",
+   "chawk bazar",
+   "চকবাজার",
+   "চক বাজার"
+  ],
+  "lat": 23.717,
+  "lng": 90.396,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "bakshi-bazar"
+ },
+ {
+  "id": "old-dhaka-shankhari-bazar",
+  "name_bn": "শাঁখারী বাজার",
+  "name_en": "Shankhari Bazar",
+  "aliases": [
+   "shakhari bazar",
+   "শাখারি বাজার"
+  ],
+  "lat": 23.7125,
+  "lng": 90.404,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "naya-bazar"
+ },
+ {
+  "id": "aftabnagar",
+  "name_bn": "আফতাবনগর",
+  "name_en": "Aftabnagar",
+  "aliases": [
+   "aftab nagar",
+   "আফতাব নগর"
+  ],
+  "lat": 23.764,
+  "lng": 90.449,
+  "hint_text_en": "Take a rickshaw west to Rampura Bridge or Banasree, then board.",
+  "hint_text_bn": "রিকশায় পশ্চিমে রামপুরা ব্রিজ বা বনশ্রীতে এসে বাস ধরুন।",
+  "nearest_stop_id": "south-banasree"
+ },
+ {
+  "id": "hatirjheel",
+  "name_bn": "হাতিরঝিল",
+  "name_en": "Hatirjheel",
+  "aliases": [
+   "hatir jheel",
+   "hatirjhil",
+   "হাতিরঝিল"
+  ],
+  "lat": 23.75,
+  "lng": 90.403,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "mogbazar"
+ },
+ {
+  "id": "mugda",
+  "name_bn": "মুগদা",
+  "name_en": "Mugda",
+  "aliases": [
+   "mugdapara",
+   "মুগদাপাড়া",
+   "মুগদা"
+  ],
+  "lat": 23.729,
+  "lng": 90.435,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "mugdapara"
+ },
+ {
+  "id": "maniknagar",
+  "name_bn": "মানিকনগর",
+  "name_en": "Maniknagar",
+  "aliases": [
+   "manik nagar",
+   "মানিক নগর"
+  ],
+  "lat": 23.7195,
+  "lng": 90.43,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "golapbagh-chowrasta"
+ },
+ {
+  "id": "basabo",
+  "name_bn": "বাসাবো",
+  "name_en": "Basabo",
+  "aliases": [
+   "bashabo",
+   "বাসাবু"
+  ],
+  "lat": 23.7365,
+  "lng": 90.433,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "bashabo"
+ },
+ {
+  "id": "dania",
+  "name_bn": "দনিয়া",
+  "name_en": "Dania",
+  "aliases": [
+   "doniya",
+   "দনিয়া"
+  ],
+  "lat": 23.7015,
+  "lng": 90.438,
+  "hint_text_en": "",
+  "hint_text_bn": "",
+  "nearest_stop_id": "dholairpar"
+ }
+]
