@@ -139,6 +139,9 @@ const S = {
     summaryChange: (to, b1, board, mid, b2, alight) => `${to} যেতে ${board} থেকে ${b1} বাসে উঠে ${mid}-এ নামুন। তারপর ${b2} বাসে উঠে ${alight}-এ নামুন।`,
     // v3 — step-by-step journey
     minRange: (a, b) => `${n(a)}–${n(b)} মিনিট`,
+    factTime: "বাসে সময় (মিনিট)",
+    factBuses: "বাস",
+    factWalk: "হাঁটার সময় (মিনিট)",
     verdictDirect: "সরাসরি বাস আছে",
     verdictDirectSub: "বাস বদলাতে হবে না",
     verdictChange: "একবার বাস বদলাতে হবে",
@@ -323,6 +326,9 @@ const S = {
     summaryChange: (to, b1, board, mid, b2, alight) => `To reach ${to}, take ${b1} from ${board} and get off at ${mid}. Then take ${b2} and get off at ${alight}.`,
     // v3 — step-by-step journey
     minRange: (a, b) => `about ${n(a)}–${n(b)} min`,
+    factTime: "Ride time (min)",
+    factBuses: "Buses",
+    factWalk: "Walking time (min)",
     verdictDirect: "A bus goes straight there",
     verdictDirectSub: "No changing buses",
     verdictChange: "You'll change buses once",
