@@ -65,27 +65,23 @@ By default "bus seen" and fare reports are stored **on the rider's own device**,
 
 The browser can only call six functions; the tables are closed by row-level security. The functions check that the bus serves the stop, rate-limit per device, and store no position. (Written against the PRD but **not yet run against a live Supabase project**.)
 
-## Map
+## Map and look
 
-One map per option, showing the whole trip: you → boarding stop → the bus's real stop-to-stop path → get-off stop → destination (walking legs dotted, the bus path drawn in the bus's colour with a small bus riding it). On a bus's page the whole route is shown with the rider's stretch highlighted. It is a still picture — OSM tiles placed by `js/map.js`, no panning — and it only draws once its box has a real size, so tiles and overlay always line up. The default tile URL is the public OSM server (fine for a trial, against their policy at scale): point `tileUrl` in `js/config.js` at a self-hosted Dhaka tile source before launch. Walking lines are straight, not routed.
+The app is map-first, in the manner of a transit app: a real map of Dhaka fills the top (or the right-hand side on a wide screen) and a white sheet slides over it with the search box and the answer.
 
-## Look and motion (v3)
+- **Home:** the bus stops fade in across the map, outward from the centre. Stops only — nothing there claims to be a live bus.
+- **Results:** the map redraws as the whole trip — you → boarding stop → the bus's stop-to-stop path (smoothed, not road-snapped) → get-off stop → destination — with white dots flowing along the route in the direction of travel. Below it, the sheet gives the one-line answer (direct / one change / just walk), fare range, ride time and bus count, then a step-by-step rail: *start → walk/rickshaw → get on at X → take any one of these buses → get off at Y → walk → arrive*. Each bus is a row with its route colour badge, name, ride time, hours and official fare.
+- **Voice:** while listening, the headline shows what's being heard, a waveform plays and the mic turns red with pulse rings.
+- **Motion** is limited to things that explain: routes draw themselves, the map eases in, pins drop, the rail grows. Everything stops under `prefers-reduced-motion`.
+- Dark mode inverts the map tiles and uses a night palette.
 
-Warm paper background, ink-outlined "sticker" cards, Baloo Da 2 for display type and Hind Siliguri for text, dark mode as a night scene. All artwork is inline SVG generated in `js/art.js`, styled and animated in `css/art.css`:
-
-- six painted buses (`PAINTS`) after the ones that run in Dhaka — each bus route gets one paint job, picked from its id, so a bus looks the same everywhere
-- the home screen is a street scene: parallax skyline with a mosque and flyover, a road, a bus you can tap to honk (a short two-note horn via WebAudio), another bus overtaking, a rickshaw drifting by
-- while listening the town holds still and the bus flashes its headlights; the headline shows what's being heard
-- pressing Find sends a small bus across the button; each result bus drives into its card; the rail between "get on" and "get off" draws itself with a bus token riding it
-- everything stops under `prefers-reduced-motion`
-
-Results are a step-by-step rail: *start → walk/rickshaw → get on at X → take any one of these buses → get off at Y → walk → arrive*. A dark card on top answers in one line (direct / one change / just walk) with the fare range, ride time and bus count. Stops under 400 m apart are never offered as a bus ride, and places under 650 m apart get "it's close, walk".
+`js/map.js` lays out OSM tiles by hand (no panning, no libraries) and only draws once its box has a real size, so tiles and overlay always line up. The default tile URL is OpenStreetMap's public server — fine for a trial, against their policy at scale, so point `tileUrl` / `tileUrlDark` in `js/config.js` at a self-hosted or paid tile source before launch (CARTO's keyless tiles now return an API-key watermark, so they aren't used). Walking lines are straight, not routed.
 
 ## Files
 
 ```
-index.html  css/styles.css · css/art.css
-js/  app.js (UI, voice flow, router) · art.js (buses, scene, logo) · voice.js · parse.js · search.js · text.js · store.js · map.js · i18n.js · icons.js · ui.js · config.js
+index.html  css/styles.css
+js/  app.js (UI, voice flow, router) · art.js (logo, route colours) · voice.js · parse.js · search.js · text.js · store.js · map.js · i18n.js · icons.js · ui.js · config.js
 data/  stops · routes · areas · settings (.json)
 tools/ import-dbs.py · dbs-raw.json · seed.mjs · build-data.mjs · export-sql.mjs      supabase/ schema.sql · seed.sql
 tests/ run.mjs · voice-store.mjs · fake-sr.js
