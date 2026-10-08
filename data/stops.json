@@ -1,0 +1,2688 @@
+[
+ {
+  "id": "gabtoli",
+  "name_bn": "গাবতলী",
+  "name_en": "Gabtoli",
+  "aliases": [
+   "গাবতলি",
+   "gabtali",
+   "gabtoli bus terminal",
+   "gabtoli bridge",
+   "গাবতলী বাস টার্মিনাল"
+  ],
+  "lat": 23.7783,
+  "lng": 90.345,
+  "coord": "hand"
+ },
+ {
+  "id": "technical",
+  "name_bn": "টেকনিক্যাল",
+  "name_en": "Technical",
+  "aliases": [
+   "technical more",
+   "technical mor",
+   "টেকনিক্যাল মোড়",
+   "টেকনিকাল"
+  ],
+  "lat": 23.7838,
+  "lng": 90.3541,
+  "coord": "hand"
+ },
+ {
+  "id": "ansar-camp",
+  "name_bn": "আনসার ক্যাম্প",
+  "name_en": "Ansar Camp",
+  "aliases": [],
+  "lat": 23.7911,
+  "lng": 90.35392,
+  "coord": "osm"
+ },
+ {
+  "id": "mirpur-1",
+  "name_bn": "মিরপুর ১",
+  "name_en": "Mirpur 1",
+  "aliases": [
+   "mirpur one",
+   "mirpur 1 number",
+   "mirpur-1",
+   "মিরপুর এক",
+   "মিরপুর-১",
+   "মিরপুর ১ নম্বর",
+   "mirpur 1 bus stand"
+  ],
+  "lat": 23.7957,
+  "lng": 90.3535,
+  "coord": "hand"
+ },
+ {
+  "id": "sony-cinema-hall",
+  "name_bn": "সনি সিনেমা হল",
+  "name_en": "Sony Cinema Hall",
+  "aliases": [],
+  "lat": 23.80049,
+  "lng": 90.35539,
+  "coord": "osm"
+ },
+ {
+  "id": "mirpur-2",
+  "name_bn": "মিরপুর ২",
+  "name_en": "Mirpur 2",
+  "aliases": [
+   "mirpur two",
+   "mirpur-2",
+   "মিরপুর দুই",
+   "মিরপুর-২",
+   "মিরপুর ২ নম্বর",
+   "mirpur stadium"
+  ],
+  "lat": 23.8062,
+  "lng": 90.355,
+  "coord": "hand"
+ },
+ {
+  "id": "mirpur-10",
+  "name_bn": "মিরপুর ১০",
+  "name_en": "Mirpur 10",
+  "aliases": [
+   "mirpur ten",
+   "mirpur-10",
+   "mirpur 10 golchattar",
+   "mirpur 10 gol chattar",
+   "mirpur dosh",
+   "মিরপুর দশ",
+   "মিরপুর-১০",
+   "মিরপুর ১০ গোলচত্বর",
+   "মিরপুর ১০ নম্বর",
+   "মিরপুর টেন"
+  ],
+  "lat": 23.8069,
+  "lng": 90.3685,
+  "coord": "hand"
+ },
+ {
+  "id": "mirpur-11",
+  "name_bn": "মিরপুর ১১",
+  "name_en": "Mirpur 11",
+  "aliases": [
+   "mirpur eleven",
+   "mirpur-11",
+   "মিরপুর এগারো",
+   "মিরপুর-১১",
+   "মিরপুর ১১ নম্বর",
+   "mirpur egaro"
+  ],
+  "lat": 23.818,
+  "lng": 90.365,
+  "coord": "hand"
+ },
+ {
+  "id": "purobi",
+  "name_bn": "পুরবী",
+  "name_en": "Purobi",
+  "aliases": [],
+  "lat": 23.81906,
+  "lng": 90.36523,
+  "coord": "osm"
+ },
+ {
+  "id": "kalshi",
+  "name_bn": "কালশী",
+  "name_en": "Kalshi",
+  "aliases": [
+   "kalsi",
+   "kalshi road",
+   "কালসী",
+   "কালশী রোড"
+  ],
+  "lat": 23.834,
+  "lng": 90.379,
+  "coord": "hand"
+ },
+ {
+  "id": "ecb-square",
+  "name_bn": "ইসিবি স্কয়ার",
+  "name_en": "ECB Square",
+  "aliases": [],
+  "lat": 23.81349,
+  "lng": 90.3832,
+  "coord": "approx"
+ },
+ {
+  "id": "mes",
+  "name_bn": "এমইএস",
+  "name_en": "MES",
+  "aliases": [],
+  "lat": 23.78992,
+  "lng": 90.39038,
+  "coord": "osm"
+ },
+ {
+  "id": "shewra",
+  "name_bn": "শেওড়া",
+  "name_en": "Shewra",
+  "aliases": [],
+  "lat": 23.81799,
+  "lng": 90.41361,
+  "coord": "osm"
+ },
+ {
+  "id": "kuril-bishwa-road",
+  "name_bn": "কুড়িল বিশ্বরোড",
+  "name_en": "Kuril Bishwa Road",
+  "aliases": [
+   "kuril",
+   "কুড়িল",
+   "kuril flyover",
+   "kuril chourasta",
+   "কুড়িল বিশ্ব রোড",
+   "Kuril Chourasta",
+   "কুড়িল চৌরাস্তা",
+   "Kuril Flyover",
+   "কুড়িল ফ্লাইওভার",
+   "কুরিল",
+   "bishwa road",
+   "বিশ্বরোড"
+  ],
+  "lat": 23.821,
+  "lng": 90.4215,
+  "coord": "hand"
+ },
+ {
+  "id": "jamuna-future-park",
+  "name_bn": "যমুনা ফিউচার পার্ক",
+  "name_en": "Jamuna Future Park",
+  "aliases": [
+   "jfp",
+   "jamuna",
+   "future park",
+   "যমুনা",
+   "জেএফপি"
+  ],
+  "lat": 23.8137,
+  "lng": 90.4247,
+  "coord": "hand"
+ },
+ {
+  "id": "bashundhara",
+  "name_bn": "বসুন্ধরা",
+  "name_en": "Bashundhara",
+  "aliases": [
+   "bashundhara",
+   "bashundhara ra",
+   "bosundhara",
+   "basundhara",
+   "বসুন্ধরা আবাসিক",
+   "বসুন্ধরা গেট"
+  ],
+  "lat": 23.819,
+  "lng": 90.431,
+  "coord": "hand"
+ },
+ {
+  "id": "nadda",
+  "name_bn": "নদ্দা",
+  "name_en": "Nadda",
+  "aliases": [],
+  "lat": 23.8119,
+  "lng": 90.42118,
+  "coord": "osm"
+ },
+ {
+  "id": "notun-bazar",
+  "name_bn": "নতুন বাজার",
+  "name_en": "Notun Bazar",
+  "aliases": [
+   "natun bazar",
+   "nutun bazar",
+   "নতুনবাজার"
+  ],
+  "lat": 23.7983,
+  "lng": 90.4222,
+  "coord": "hand"
+ },
+ {
+  "id": "bashtola",
+  "name_bn": "বাঁশতলা",
+  "name_en": "Bashtola",
+  "aliases": [],
+  "lat": 23.7944,
+  "lng": 90.42251,
+  "coord": "osm"
+ },
+ {
+  "id": "shahjadpur",
+  "name_bn": "শাহজাদপুর",
+  "name_en": "Shahjadpur",
+  "aliases": [],
+  "lat": 23.79191,
+  "lng": 90.42428,
+  "coord": "osm"
+ },
+ {
+  "id": "uttar-badda",
+  "name_bn": "উত্তর বাড্ডা",
+  "name_en": "Uttar Badda",
+  "aliases": [],
+  "lat": 23.7857,
+  "lng": 90.42561,
+  "coord": "osm"
+ },
+ {
+  "id": "badda",
+  "name_bn": "বাড্ডা",
+  "name_en": "Badda",
+  "aliases": [],
+  "lat": 23.78,
+  "lng": 90.4255,
+  "coord": "hand"
+ },
+ {
+  "id": "madhya-badda",
+  "name_bn": "মধ্য বাড্ডা",
+  "name_en": "Madhya Badda",
+  "aliases": [],
+  "lat": 23.7808,
+  "lng": 90.42627,
+  "coord": "osm"
+ },
+ {
+  "id": "merul-badda",
+  "name_bn": "মেরুল বাড্ডা",
+  "name_en": "Merul Badda",
+  "aliases": [],
+  "lat": 23.77713,
+  "lng": 90.42563,
+  "coord": "osm"
+ },
+ {
+  "id": "rampura-bridge",
+  "name_bn": "রামপুরা ব্রিজ",
+  "name_en": "Rampura Bridge",
+  "aliases": [
+   "rampura bridge",
+   "rampura tv",
+   "রামপুরা টিভি সেন্টার",
+   "ramprua"
+  ],
+  "lat": 23.7615,
+  "lng": 90.425,
+  "coord": "hand"
+ },
+ {
+  "id": "banasree",
+  "name_bn": "বনশ্রী",
+  "name_en": "Banasree",
+  "aliases": [
+   "bonosree",
+   "banashree",
+   "banasri"
+  ],
+  "lat": 23.76,
+  "lng": 90.433,
+  "coord": "hand"
+ },
+ {
+  "id": "demra-staff-quarter",
+  "name_bn": "ডেমরা স্টাফ কোয়ার্টার",
+  "name_en": "Demra Staff Quarter",
+  "aliases": [],
+  "lat": 23.72261,
+  "lng": 90.4914,
+  "coord": "osm"
+ },
+ {
+  "id": "shia-masjid",
+  "name_bn": "শিয়া মসজিদ",
+  "name_en": "Shia Masjid",
+  "aliases": [],
+  "lat": 23.7621,
+  "lng": 90.35911,
+  "coord": "osm"
+ },
+ {
+  "id": "adabor",
+  "name_bn": "আদাবর",
+  "name_en": "Adabor",
+  "aliases": [],
+  "lat": 23.77214,
+  "lng": 90.35788,
+  "coord": "osm"
+ },
+ {
+  "id": "shyamoli",
+  "name_bn": "শ্যামলী",
+  "name_en": "Shyamoli",
+  "aliases": [
+   "shamoli",
+   "shyamoli square",
+   "syamoli",
+   "shamoly",
+   "শ্যামলি",
+   "শ্যামলী স্কয়ার"
+  ],
+  "lat": 23.7742,
+  "lng": 90.365,
+  "coord": "hand"
+ },
+ {
+  "id": "shewrapara",
+  "name_bn": "শেওড়াপাড়া",
+  "name_en": "Shewrapara",
+  "aliases": [
+   "sheorapara",
+   "sewrapara",
+   "shewra para",
+   "শেওড়া পাড়া",
+   "শেওরাপাড়া"
+  ],
+  "lat": 23.7905,
+  "lng": 90.3755,
+  "coord": "hand"
+ },
+ {
+  "id": "khilkhet",
+  "name_bn": "খিলক্ষেত",
+  "name_en": "Khilkhet",
+  "aliases": [
+   "khilkhet",
+   "খিলখেত"
+  ],
+  "lat": 23.829,
+  "lng": 90.421,
+  "coord": "hand"
+ },
+ {
+  "id": "airport",
+  "name_bn": "এয়ারপোর্ট",
+  "name_en": "Airport",
+  "aliases": [
+   "বিমানবন্দর",
+   "biman bandar",
+   "shahjalal airport",
+   "hazrat shahjalal",
+   "airport road"
+  ],
+  "lat": 23.8517,
+  "lng": 90.404,
+  "coord": "hand"
+ },
+ {
+  "id": "jashimuddin",
+  "name_bn": "জসিমউদ্দিন",
+  "name_en": "Jashimuddin",
+  "aliases": [
+   "Jashimuddin (Uttara)",
+   "জসিমউদ্দিন - উত্তরা",
+   "jasimuddin",
+   "jasim uddin",
+   "jashim uddin",
+   "জসীম উদ্দীন"
+  ],
+  "lat": 23.8607,
+  "lng": 90.3997,
+  "coord": "hand"
+ },
+ {
+  "id": "rajlakshmi",
+  "name_bn": "রাজলক্ষ্মী",
+  "name_en": "Rajlakshmi",
+  "aliases": [
+   "rajlakshmi",
+   "razlokkhi",
+   "rajlaxmi",
+   "রাজলক্ষী"
+  ],
+  "lat": 23.8641,
+  "lng": 90.4003,
+  "coord": "hand"
+ },
+ {
+  "id": "azampur",
+  "name_bn": "আজমপুর",
+  "name_en": "Azampur",
+  "aliases": [
+   "ajampur"
+  ],
+  "lat": 23.8672,
+  "lng": 90.4003,
+  "coord": "hand"
+ },
+ {
+  "id": "house-building",
+  "name_bn": "হাউজ বিল্ডিং (উত্তরা)",
+  "name_en": "House Building (Uttara)",
+  "aliases": [
+   "uttara",
+   "উত্তরা",
+   "uttara house building",
+   "hb",
+   "House Building",
+   "হাউজ বিল্ডিং",
+   "Uttara",
+   "house building",
+   "uttara hb",
+   "hb uttara",
+   "হাউস বিল্ডিং",
+   "হাউজবিল্ডিং",
+   "উত্তরা হাউসবিল্ডিং"
+  ],
+  "lat": 23.8738,
+  "lng": 90.3994,
+  "coord": "hand"
+ },
+ {
+  "id": "abdullahpur",
+  "name_bn": "আব্দুল্লাহপুর",
+  "name_en": "Abdullahpur",
+  "aliases": [
+   "abdullapur",
+   "abdullahpur uttara",
+   "আবদুল্লাহপুর",
+   "আব্দুল্লাপুর"
+  ],
+  "lat": 23.8797,
+  "lng": 90.4006,
+  "coord": "hand"
+ },
+ {
+  "id": "savar",
+  "name_bn": "সাভার",
+  "name_en": "Savar",
+  "aliases": [
+   "savar bus stand",
+   "shavar",
+   "সাভার বাস স্ট্যান্ড"
+  ],
+  "lat": 23.8466,
+  "lng": 90.2575,
+  "coord": "hand"
+ },
+ {
+  "id": "hemayetpur",
+  "name_bn": "হেমায়েতপুর",
+  "name_en": "Hemayetpur",
+  "aliases": [],
+  "lat": 23.8153,
+  "lng": 90.29356,
+  "coord": "approx"
+ },
+ {
+  "id": "amin-bazar",
+  "name_bn": "আমিন বাজার",
+  "name_en": "Amin Bazar",
+  "aliases": [
+   "amin bazar",
+   "aminbazar bridge"
+  ],
+  "lat": 23.788,
+  "lng": 90.32,
+  "coord": "hand"
+ },
+ {
+  "id": "kallyanpur",
+  "name_bn": "কল্যাণপুর",
+  "name_en": "Kallyanpur",
+  "aliases": [
+   "kalyanpur",
+   "kollanpur",
+   "kallyanpur bus stand"
+  ],
+  "lat": 23.7795,
+  "lng": 90.3607,
+  "coord": "hand"
+ },
+ {
+  "id": "shishu-mela",
+  "name_bn": "শিশু মেলা",
+  "name_en": "Shishu Mela",
+  "aliases": [
+   "shishumela",
+   "শিশুমেলা"
+  ],
+  "lat": 23.77294,
+  "lng": 90.36715,
+  "coord": "osm"
+ },
+ {
+  "id": "agargaon",
+  "name_bn": "আগারগাঁও",
+  "name_en": "Agargaon",
+  "aliases": [
+   "agargoan",
+   "agargaon taltola",
+   "আগারগাও",
+   "আগারগাঁও তালতলা"
+  ],
+  "lat": 23.778,
+  "lng": 90.38,
+  "coord": "hand"
+ },
+ {
+  "id": "zia-uddyan",
+  "name_bn": "জিয়া উদ্যান",
+  "name_en": "Zia Uddyan",
+  "aliases": [],
+  "lat": 23.76603,
+  "lng": 90.3789,
+  "coord": "osm"
+ },
+ {
+  "id": "bijoy-sarani",
+  "name_bn": "বিজয় সরণি",
+  "name_en": "Bijoy Sarani",
+  "aliases": [
+   "বিজয় সারাণী"
+  ],
+  "lat": 23.76639,
+  "lng": 90.3831,
+  "coord": "osm"
+ },
+ {
+  "id": "jahangir-gate",
+  "name_bn": "জাহাঙ্গীর গেট",
+  "name_en": "Jahangir Gate",
+  "aliases": [],
+  "lat": 23.77515,
+  "lng": 90.39005,
+  "coord": "osm"
+ },
+ {
+  "id": "mohakhali",
+  "name_bn": "মহাখালী",
+  "name_en": "Mohakhali",
+  "aliases": [
+   "mohakhali bus terminal",
+   "mohakhali flyover",
+   "মহাখালি",
+   "মহাখালী বাস টার্মিনাল"
+  ],
+  "lat": 23.7782,
+  "lng": 90.4007,
+  "coord": "hand"
+ },
+ {
+  "id": "wireless",
+  "name_bn": "ওয়্যারলেস",
+  "name_en": "Wireless",
+  "aliases": [],
+  "lat": 23.78079,
+  "lng": 90.40543,
+  "coord": "osm"
+ },
+ {
+  "id": "gulshan-1",
+  "name_bn": "গুলশান ১",
+  "name_en": "Gulshan 1",
+  "aliases": [
+   "Golshan 1",
+   "gulshan one",
+   "gulshan circle 1",
+   "গুলশান এক",
+   "গুলশান-১",
+   "গুলশান ১ নম্বর"
+  ],
+  "lat": 23.7806,
+  "lng": 90.4167,
+  "coord": "hand"
+ },
+ {
+  "id": "badda-link-road",
+  "name_bn": "বাড্ডা লিংক রোড",
+  "name_en": "Badda Link Road",
+  "aliases": [],
+  "lat": 23.78062,
+  "lng": 90.42475,
+  "coord": "osm"
+ },
+ {
+  "id": "fulbaria",
+  "name_bn": "ফুলবাড়িয়া",
+  "name_en": "Fulbaria",
+  "aliases": [],
+  "lat": 23.73143,
+  "lng": 90.39703,
+  "coord": "osm"
+ },
+ {
+  "id": "golap-shah-mazar",
+  "name_bn": "গোলাপ শাহ মাজার",
+  "name_en": "Golap Shah Mazar",
+  "aliases": [],
+  "lat": 23.72499,
+  "lng": 90.41084,
+  "coord": "osm"
+ },
+ {
+  "id": "gpo",
+  "name_bn": "জিপিও",
+  "name_en": "GPO",
+  "aliases": [
+   "general post office",
+   "জেনারেল পোস্ট অফিস"
+  ],
+  "lat": 23.72893,
+  "lng": 90.4114,
+  "coord": "osm"
+ },
+ {
+  "id": "paltan",
+  "name_bn": "পল্টন",
+  "name_en": "Paltan",
+  "aliases": [
+   "poltan",
+   "paltan more",
+   "পল্টন মোড়",
+   "bijoynagar",
+   "বিজয়নগর"
+  ],
+  "lat": 23.7345,
+  "lng": 90.412,
+  "coord": "hand"
+ },
+ {
+  "id": "press-club",
+  "name_bn": "প্রেস ক্লাব",
+  "name_en": "Press Club",
+  "aliases": [
+   "pressclub",
+   "jatiya press club",
+   "জাতীয় প্রেসক্লাব",
+   "প্রেসক্লাব",
+   "segunbagicha",
+   "সেগুনবাগিচা"
+  ],
+  "lat": 23.7312,
+  "lng": 90.409,
+  "coord": "hand"
+ },
+ {
+  "id": "high-court",
+  "name_bn": "হাইকোর্ট",
+  "name_en": "High Court",
+  "aliases": [
+   "উচ্চ আদালত",
+   "highcourt"
+  ],
+  "lat": 23.72973,
+  "lng": 90.40274,
+  "coord": "osm"
+ },
+ {
+  "id": "matsya-bhaban",
+  "name_bn": "মৎস্য ভবন",
+  "name_en": "Matsya Bhaban",
+  "aliases": [
+   "matsho bhaban",
+   "মৎস ভবন"
+  ],
+  "lat": 23.73376,
+  "lng": 90.40293,
+  "coord": "osm"
+ },
+ {
+  "id": "shahbag",
+  "name_bn": "শাহবাগ",
+  "name_en": "Shahbag",
+  "aliases": [
+   "dhaka university",
+   "ঢাকা বিশ্ববিদ্যালয়",
+   "ঢাবি",
+   "du",
+   "tsc",
+   "টিএসসি",
+   "pg hospital",
+   "পিজি হাসপাতাল",
+   "bsmmu",
+   "shahbagh",
+   "shahbug",
+   "শাহবাগ মোড়",
+   "বারডেম"
+  ],
+  "lat": 23.7391,
+  "lng": 90.395,
+  "coord": "hand"
+ },
+ {
+  "id": "bangla-motor",
+  "name_bn": "বাংলা মোটর",
+  "name_en": "Bangla Motor",
+  "aliases": [
+   "banglamotor",
+   "bangla mor"
+  ],
+  "lat": 23.7468,
+  "lng": 90.3916,
+  "coord": "hand"
+ },
+ {
+  "id": "kawran-bazar",
+  "name_bn": "কারওয়ান বাজার",
+  "name_en": "Karwan Bazar",
+  "aliases": [
+   "Kawran Bazar",
+   "কাওরান বাজার",
+   "kawran bazar",
+   "karwan bazaar",
+   "kawranbazar",
+   "কারওয়ানবাজার"
+  ],
+  "lat": 23.751,
+  "lng": 90.393,
+  "coord": "hand"
+ },
+ {
+  "id": "farmgate",
+  "name_bn": "ফার্মগেট",
+  "name_en": "Farmgate",
+  "aliases": [
+   "tejgaon college",
+   "farm gate",
+   "Tejgaon College (Farmgate)",
+   "তেজগাঁও কলেজ - ফার্মগেট",
+   "farmget",
+   "ফার্ম গেট"
+  ],
+  "lat": 23.759,
+  "lng": 90.3871,
+  "coord": "hand"
+ },
+ {
+  "id": "chairman-bari",
+  "name_bn": "চেয়ারম্যান বাড়ী",
+  "name_en": "Chairman Bari",
+  "aliases": [],
+  "lat": 23.78815,
+  "lng": 90.401,
+  "coord": "osm"
+ },
+ {
+  "id": "sainik-club",
+  "name_bn": "সৈনিক ক্লাব",
+  "name_en": "Sainik Club",
+  "aliases": [],
+  "lat": 23.79053,
+  "lng": 90.39997,
+  "coord": "osm"
+ },
+ {
+  "id": "banani",
+  "name_bn": "বনানী",
+  "name_en": "Banani",
+  "aliases": [
+   "bonani",
+   "বনানি"
+  ],
+  "lat": 23.7937,
+  "lng": 90.4066,
+  "coord": "hand"
+ },
+ {
+  "id": "kakali",
+  "name_bn": "কাকলী",
+  "name_en": "Kakoli",
+  "aliases": [
+   "Kakali",
+   "kakoli bus stand",
+   "কাকলি"
+  ],
+  "lat": 23.7972,
+  "lng": 90.4009,
+  "coord": "hand"
+ },
+ {
+  "id": "staff-road",
+  "name_bn": "স্টাফ রোড",
+  "name_en": "Staff Road",
+  "aliases": [],
+  "lat": 23.81143,
+  "lng": 90.40416,
+  "coord": "osm"
+ },
+ {
+  "id": "kurmitola",
+  "name_bn": "কুর্মিটোলা",
+  "name_en": "Kurmitola",
+  "aliases": [],
+  "lat": 23.81683,
+  "lng": 90.40719,
+  "coord": "osm"
+ },
+ {
+  "id": "sadarghat",
+  "name_bn": "সদরঘাট",
+  "name_en": "Sadarghat",
+  "aliases": [
+   "sodorghat",
+   "sadar ghat",
+   "sadarghat launch terminal",
+   "সদর ঘাট",
+   "সদরঘাট লঞ্চ টার্মিনাল",
+   "launch ghat",
+   "লঞ্চঘাট"
+  ],
+  "lat": 23.706,
+  "lng": 90.4065,
+  "coord": "hand"
+ },
+ {
+  "id": "ray-saheb-bazar",
+  "name_bn": "রায় সাহেব বাজার",
+  "name_en": "Ray Saheb Bazar",
+  "aliases": [],
+  "lat": 23.71304,
+  "lng": 90.41034,
+  "coord": "osm"
+ },
+ {
+  "id": "naya-bazar",
+  "name_bn": "নয়া বাজার",
+  "name_en": "Naya Bazar",
+  "aliases": [],
+  "lat": 23.71462,
+  "lng": 90.40625,
+  "coord": "osm"
+ },
+ {
+  "id": "kakrail",
+  "name_bn": "কাকরাইল",
+  "name_en": "Kakrail",
+  "aliases": [],
+  "lat": 23.73765,
+  "lng": 90.40831,
+  "coord": "osm"
+ },
+ {
+  "id": "shantinagar",
+  "name_bn": "শান্তিনগর",
+  "name_en": "Shantinagar",
+  "aliases": [
+   "shanti nagar",
+   "santinagar",
+   "শান্তি নগর"
+  ],
+  "lat": 23.7378,
+  "lng": 90.413,
+  "coord": "hand"
+ },
+ {
+  "id": "malibagh",
+  "name_bn": "মালিবাগ",
+  "name_en": "Malibagh",
+  "aliases": [
+   "Malibaag Moor",
+   "মালিবাগ মোড়",
+   "malibag"
+  ],
+  "lat": 23.748,
+  "lng": 90.417,
+  "coord": "hand"
+ },
+ {
+  "id": "mouchak",
+  "name_bn": "মৌচাক",
+  "name_en": "Mouchak",
+  "aliases": [
+   "mauchak",
+   "moucahk",
+   "mowchak"
+  ],
+  "lat": 23.7455,
+  "lng": 90.4108,
+  "coord": "hand"
+ },
+ {
+  "id": "nabisco",
+  "name_bn": "নাবিস্কো",
+  "name_en": "Nabisco",
+  "aliases": [],
+  "lat": 23.76926,
+  "lng": 90.40122,
+  "coord": "osm"
+ },
+ {
+  "id": "tongi",
+  "name_bn": "টঙ্গী",
+  "name_en": "Tongi",
+  "aliases": [
+   "tongi bazar",
+   "টঙ্গী বাজার",
+   "tongi station"
+  ],
+  "lat": 23.892,
+  "lng": 90.404,
+  "coord": "hand"
+ },
+ {
+  "id": "station-road",
+  "name_bn": "স্টেশন রোড",
+  "name_en": "Station Road",
+  "aliases": [],
+  "lat": 23.89199,
+  "lng": 90.40228,
+  "coord": "osm"
+ },
+ {
+  "id": "mill-gate",
+  "name_bn": "মিল গেট",
+  "name_en": "Mill Gate",
+  "aliases": [],
+  "lat": 23.89601,
+  "lng": 90.39938,
+  "coord": "osm"
+ },
+ {
+  "id": "board-bazar",
+  "name_bn": "বোর্ড বাজার",
+  "name_en": "Board Bazar",
+  "aliases": [],
+  "lat": 23.91796,
+  "lng": 90.39364,
+  "coord": "osm"
+ },
+ {
+  "id": "gazipur-bypass",
+  "name_bn": "গাজীপুর বাইপাস",
+  "name_en": "Gazipur Bypass",
+  "aliases": [],
+  "lat": 23.95244,
+  "lng": 90.40324,
+  "coord": "osm"
+ },
+ {
+  "id": "konabari",
+  "name_bn": "কোনাবাড়ি",
+  "name_en": "Konabari",
+  "aliases": [
+   "কোনাবাড়ী"
+  ],
+  "lat": 23.86046,
+  "lng": 90.35398,
+  "coord": "approx"
+ },
+ {
+  "id": "chandra",
+  "name_bn": "চন্দ্রা",
+  "name_en": "Chandra",
+  "aliases": [],
+  "lat": 23.92686,
+  "lng": 90.27572,
+  "coord": "approx"
+ },
+ {
+  "id": "dhamrai",
+  "name_bn": "ধামরাই",
+  "name_en": "Dhamrai",
+  "aliases": [],
+  "lat": 23.86956,
+  "lng": 90.25808,
+  "coord": "approx"
+ },
+ {
+  "id": "college-gate",
+  "name_bn": "কলেজ গেট",
+  "name_en": "College Gate",
+  "aliases": [],
+  "lat": 23.76942,
+  "lng": 90.36889,
+  "coord": "osm"
+ },
+ {
+  "id": "asad-gate",
+  "name_bn": "আসাদ গেট",
+  "name_en": "Asad Gate",
+  "aliases": [
+   "asadgate",
+   "asad get",
+   "আসাদগেট",
+   "আসাদ গেইট"
+  ],
+  "lat": 23.7625,
+  "lng": 90.3745,
+  "coord": "hand"
+ },
+ {
+  "id": "dhanmondi-27",
+  "name_bn": "ধানমন্ডি ২৭",
+  "name_en": "Dhanmondi 27",
+  "aliases": [
+   "dhanmondi 27 number",
+   "dhanmondi twenty seven",
+   "ধানমন্ডি সাতাশ",
+   "ধানমণ্ডি ২৭"
+  ],
+  "lat": 23.7545,
+  "lng": 90.3735,
+  "coord": "hand"
+ },
+ {
+  "id": "dhanmondi-32",
+  "name_bn": "ধানমন্ডি ৩২",
+  "name_en": "Dhanmondi 32",
+  "aliases": [],
+  "lat": 23.7516,
+  "lng": 90.37795,
+  "coord": "osm"
+ },
+ {
+  "id": "kalabagan",
+  "name_bn": "কলাবাগান",
+  "name_en": "Kalabagan",
+  "aliases": [
+   "kolabagan"
+  ],
+  "lat": 23.748,
+  "lng": 90.383,
+  "coord": "hand"
+ },
+ {
+  "id": "city-college",
+  "name_bn": "সিটি কলেজ",
+  "name_en": "City College",
+  "aliases": [],
+  "lat": 23.73977,
+  "lng": 90.38257,
+  "coord": "osm"
+ },
+ {
+  "id": "new-market",
+  "name_bn": "নিউ মার্কেট",
+  "name_en": "New Market",
+  "aliases": [
+   "newmarket",
+   "new market dhaka",
+   "নিউমার্কেট"
+  ],
+  "lat": 23.734,
+  "lng": 90.3855,
+  "coord": "hand"
+ },
+ {
+  "id": "nilkhet",
+  "name_bn": "নীলক্ষেত",
+  "name_en": "Nilkhet",
+  "aliases": [
+   "neelkhet",
+   "nilkhet babupura",
+   "নীলখেত",
+   "নিলক্ষেত"
+  ],
+  "lat": 23.733,
+  "lng": 90.388,
+  "coord": "hand"
+ },
+ {
+  "id": "azimpur",
+  "name_bn": "আজিমপুর",
+  "name_en": "Azimpur",
+  "aliases": [
+   "azimpur",
+   "azimpur bus stand"
+  ],
+  "lat": 23.7287,
+  "lng": 90.3865,
+  "coord": "hand"
+ },
+ {
+  "id": "bakshi-bazar",
+  "name_bn": "বকশী বাজার",
+  "name_en": "Bakshi Bazar",
+  "aliases": [],
+  "lat": 23.72256,
+  "lng": 90.39556,
+  "coord": "osm"
+ },
+ {
+  "id": "gulistan",
+  "name_bn": "গুলিস্তান",
+  "name_en": "Gulistan",
+  "aliases": [
+   "golistan",
+   "gulistan stand",
+   "গুলিস্থান",
+   "গোলিস্তান"
+  ],
+  "lat": 23.726,
+  "lng": 90.4115,
+  "coord": "hand"
+ },
+ {
+  "id": "chittagong-road",
+  "name_bn": "চট্টগ্রাম রোড",
+  "name_en": "Chittagong Road",
+  "aliases": [],
+  "lat": 23.72441,
+  "lng": 90.42736,
+  "coord": "osm"
+ },
+ {
+  "id": "kadamtali",
+  "name_bn": "কদমতলী",
+  "name_en": "Kadamtali",
+  "aliases": [],
+  "lat": 23.70216,
+  "lng": 90.3979,
+  "coord": "osm"
+ },
+ {
+  "id": "keraniganj",
+  "name_bn": "কেরাণীগঞ্জ",
+  "name_en": "Keraniganj",
+  "aliases": [],
+  "lat": 23.7005,
+  "lng": 90.38264,
+  "coord": "osm"
+ },
+ {
+  "id": "babubazar",
+  "name_bn": "বাবুবাজার",
+  "name_en": "Babubazar",
+  "aliases": [],
+  "lat": 23.70976,
+  "lng": 90.40269,
+  "coord": "osm"
+ },
+ {
+  "id": "malibagh-railgate",
+  "name_bn": "মালিবাগ রেলগেট",
+  "name_en": "Malibagh Railgate",
+  "aliases": [],
+  "lat": 23.7497,
+  "lng": 90.41263,
+  "coord": "osm"
+ },
+ {
+  "id": "hazipara",
+  "name_bn": "হাজীপাড়া",
+  "name_en": "Hazipara",
+  "aliases": [],
+  "lat": 23.75801,
+  "lng": 90.41784,
+  "coord": "osm"
+ },
+ {
+  "id": "rampura-bazar",
+  "name_bn": "রামপুরা বাজার",
+  "name_en": "Rampura Bazar",
+  "aliases": [],
+  "lat": 23.75805,
+  "lng": 90.42159,
+  "coord": "osm"
+ },
+ {
+  "id": "motijheel",
+  "name_bn": "মতিঝিল",
+  "name_en": "Motijheel",
+  "aliases": [
+   "motijil",
+   "moti jheel",
+   "motijhil",
+   "motijheel shapla chattar",
+   "shapla chattar",
+   "মতিঝিল শাপলা চত্বর",
+   "মতিজিল",
+   "dilkusha",
+   "দিলকুশা"
+  ],
+  "lat": 23.733,
+  "lng": 90.4195,
+  "coord": "hand"
+ },
+ {
+  "id": "mogbazar",
+  "name_bn": "মগবাজার",
+  "name_en": "Mogbazar",
+  "aliases": [
+   "mogbazar",
+   "mogh bazar",
+   "mogbazaar",
+   "মগ বাজার"
+  ],
+  "lat": 23.7512,
+  "lng": 90.404,
+  "coord": "hand"
+ },
+ {
+  "id": "nandan-park",
+  "name_bn": "নন্দন পার্ক",
+  "name_en": "Nandan Park",
+  "aliases": [],
+  "lat": 23.93471,
+  "lng": 90.27324,
+  "coord": "approx"
+ },
+ {
+  "id": "zirani-bazar",
+  "name_bn": "জিরানী বাজার",
+  "name_en": "Zirani Bazar",
+  "aliases": [],
+  "lat": 23.93606,
+  "lng": 90.27175,
+  "coord": "approx"
+ },
+ {
+  "id": "baipayl",
+  "name_bn": "বাইপাইল",
+  "name_en": "Baipayl",
+  "aliases": [],
+  "lat": 23.938,
+  "lng": 90.27006,
+  "coord": "osm"
+ },
+ {
+  "id": "nobinagar",
+  "name_bn": "নবীনগর",
+  "name_en": "Nobinagar",
+  "aliases": [],
+  "lat": 23.91548,
+  "lng": 90.25923,
+  "coord": "osm"
+ },
+ {
+  "id": "khamar-bari",
+  "name_bn": "খামার বাড়ি",
+  "name_en": "Khamar Bari",
+  "aliases": [],
+  "lat": 23.75913,
+  "lng": 90.38388,
+  "coord": "osm"
+ },
+ {
+  "id": "kamalapur",
+  "name_bn": "কমলাপুর",
+  "name_en": "Kamalapur",
+  "aliases": [
+   "komlapur",
+   "kamlapur",
+   "kamalapur station",
+   "কমলাপুর রেলস্টেশন"
+  ],
+  "lat": 23.731,
+  "lng": 90.426,
+  "coord": "hand"
+ },
+ {
+  "id": "mirpur-14",
+  "name_bn": "মিরপুর ১৪",
+  "name_en": "Mirpur 14",
+  "aliases": [
+   "mirpur fourteen",
+   "mirpur-14",
+   "mirpur choddo",
+   "মিরপুর চৌদ্দ",
+   "মিরপুর-১৪",
+   "মিরপুর ১৪ নম্বর"
+  ],
+  "lat": 23.799,
+  "lng": 90.386,
+  "coord": "hand"
+ },
+ {
+  "id": "mazar-road",
+  "name_bn": "মাজার রোড",
+  "name_en": "Mazar Road",
+  "aliases": [],
+  "lat": 23.79739,
+  "lng": 90.35124,
+  "coord": "osm"
+ },
+ {
+  "id": "rupnagar",
+  "name_bn": "রূপনগর",
+  "name_en": "Rupnagar",
+  "aliases": [
+   "Rupnagar Abashik",
+   "রূপনগর আবাসিক"
+  ],
+  "lat": 23.81467,
+  "lng": 90.35457,
+  "coord": "osm"
+ },
+ {
+  "id": "beribadh",
+  "name_bn": "বেড়িবাঁধ",
+  "name_en": "Beribadh",
+  "aliases": [],
+  "lat": 23.81482,
+  "lng": 90.34085,
+  "coord": "osm"
+ },
+ {
+  "id": "birulia",
+  "name_bn": "বিরুলিয়া",
+  "name_en": "Birulia",
+  "aliases": [],
+  "lat": 23.85017,
+  "lng": 90.33393,
+  "coord": "osm"
+ },
+ {
+  "id": "ashulia",
+  "name_bn": "আশুলিয়া",
+  "name_en": "Ashulia",
+  "aliases": [
+   "আশুলিয়া",
+   "Asulia Bazar",
+   "আশুলিয়া বাজার"
+  ],
+  "lat": 23.87426,
+  "lng": 90.31086,
+  "coord": "osm"
+ },
+ {
+  "id": "zirabo",
+  "name_bn": "জিরাবো",
+  "name_en": "Zirabo",
+  "aliases": [],
+  "lat": 23.90864,
+  "lng": 90.29351,
+  "coord": "osm"
+ },
+ {
+  "id": "fantasy-kingdom",
+  "name_bn": "ফ্যান্টাসি কিংডম",
+  "name_en": "Fantasy Kingdom",
+  "aliases": [],
+  "lat": 23.93427,
+  "lng": 90.29149,
+  "coord": "osm"
+ },
+ {
+  "id": "japan-garden-city",
+  "name_bn": "জাপান গার্ডেন সিটি",
+  "name_en": "Japan Garden City",
+  "aliases": [],
+  "lat": 23.76471,
+  "lng": 90.35778,
+  "coord": "osm"
+ },
+ {
+  "id": "kazipara",
+  "name_bn": "কাজীপাড়া",
+  "name_en": "Kazipara",
+  "aliases": [
+   "kazi para",
+   "kajipara",
+   "কাজিপাড়া",
+   "কাজী পাড়া"
+  ],
+  "lat": 23.799,
+  "lng": 90.3727,
+  "coord": "hand"
+ },
+ {
+  "id": "ring-road",
+  "name_bn": "রিং রোড",
+  "name_en": "Ring Road",
+  "aliases": [],
+  "lat": 23.77045,
+  "lng": 90.35907,
+  "coord": "osm"
+ },
+ {
+  "id": "sign-board",
+  "name_bn": "সাইন বোর্ড",
+  "name_en": "Sign Board",
+  "aliases": [
+   "signboard",
+   "সাইনবোর্ড"
+  ],
+  "lat": 23.6935,
+  "lng": 90.48,
+  "coord": "hand"
+ },
+ {
+  "id": "shonir-akhra",
+  "name_bn": "শনির আখরা",
+  "name_en": "Shonir Akhra",
+  "aliases": [
+   "shanir akhra"
+  ],
+  "lat": 23.704,
+  "lng": 90.447,
+  "coord": "hand"
+ },
+ {
+  "id": "jatrabari",
+  "name_bn": "যাত্রাবাড়ী",
+  "name_en": "Jatrabari",
+  "aliases": [
+   "যাত্রাবাড়ি",
+   "jatrabari",
+   "jatrabari crossing",
+   "zatrabari",
+   "যাত্রাবাড়ী মোড়"
+  ],
+  "lat": 23.7101,
+  "lng": 90.4337,
+  "coord": "hand"
+ },
+ {
+  "id": "mugdapara",
+  "name_bn": "মুগদাপাড়া",
+  "name_en": "Mugdapara",
+  "aliases": [],
+  "lat": 23.73138,
+  "lng": 90.42866,
+  "coord": "osm"
+ },
+ {
+  "id": "bashabo",
+  "name_bn": "বাসাবো",
+  "name_en": "Bashabo",
+  "aliases": [],
+  "lat": 23.73924,
+  "lng": 90.4279,
+  "coord": "osm"
+ },
+ {
+  "id": "khilgaon",
+  "name_bn": "খিলগাঁও",
+  "name_en": "Khilgaon",
+  "aliases": [
+   "khilgaon railgate",
+   "khilgaon rail gate",
+   "খিলগাও"
+  ],
+  "lat": 23.748,
+  "lng": 90.429,
+  "coord": "hand"
+ },
+ {
+  "id": "gazipur-chourasta",
+  "name_bn": "গাজীপুর চৌরাস্তা",
+  "name_en": "Gazipur Chourasta",
+  "aliases": [
+   "gazipur",
+   "gazipur chowrasta",
+   "গাজীপুর"
+  ],
+  "lat": 23.9996,
+  "lng": 90.4203,
+  "coord": "hand"
+ },
+ {
+  "id": "duairipara",
+  "name_bn": "দুয়াইরিপাড়া",
+  "name_en": "Duairipara",
+  "aliases": [],
+  "lat": 23.81467,
+  "lng": 90.35457,
+  "coord": "approx"
+ },
+ {
+  "id": "shiyal-bari",
+  "name_bn": "শিয়াল বাড়ি",
+  "name_en": "Shiyal Bari",
+  "aliases": [],
+  "lat": 23.80819,
+  "lng": 90.35802,
+  "coord": "osm"
+ },
+ {
+  "id": "proshika-moor",
+  "name_bn": "প্রশিকা মোড়",
+  "name_en": "Proshika Moor",
+  "aliases": [],
+  "lat": 23.8114,
+  "lng": 90.359,
+  "coord": "approx"
+ },
+ {
+  "id": "shukrabad",
+  "name_bn": "শুক্রাবাদ",
+  "name_en": "Shukrabad",
+  "aliases": [],
+  "lat": 23.75247,
+  "lng": 90.37766,
+  "coord": "osm"
+ },
+ {
+  "id": "jamgora",
+  "name_bn": "জামগড়া",
+  "name_en": "Jamgora",
+  "aliases": [],
+  "lat": 23.94271,
+  "lng": 90.29671,
+  "coord": "osm"
+ },
+ {
+  "id": "kamarpara",
+  "name_bn": "কামারপাড়া",
+  "name_en": "Kamarpara",
+  "aliases": [],
+  "lat": 23.88919,
+  "lng": 90.38828,
+  "coord": "osm"
+ },
+ {
+  "id": "sat-rasta",
+  "name_bn": "সাত রাস্তা",
+  "name_en": "Sat rasta",
+  "aliases": [],
+  "lat": 23.75681,
+  "lng": 90.39891,
+  "coord": "osm"
+ },
+ {
+  "id": "dhour",
+  "name_bn": "ঢাউর",
+  "name_en": "Dhour",
+  "aliases": [],
+  "lat": 23.88765,
+  "lng": 90.3896,
+  "coord": "osm"
+ },
+ {
+  "id": "tarabo",
+  "name_bn": "তারাবো",
+  "name_en": "Tarabo",
+  "aliases": [],
+  "lat": 23.72157,
+  "lng": 90.50396,
+  "coord": "osm"
+ },
+ {
+  "id": "madanpur",
+  "name_bn": "মদনপুর",
+  "name_en": "Madanpur",
+  "aliases": [],
+  "lat": 23.71164,
+  "lng": 90.48498,
+  "coord": "approx"
+ },
+ {
+  "id": "mohammadpur",
+  "name_bn": "মোহাম্মদপুর",
+  "name_en": "Mohammadpur",
+  "aliases": [
+   "mohammadpur town hall",
+   "town hall",
+   "muhammadpur",
+   "mohammedpur",
+   "মুহাম্মদপুর",
+   "মোহাম্মদপুর টাউন হল",
+   "টাউন হল",
+   "mohammadpur bus stand"
+  ],
+  "lat": 23.759,
+  "lng": 90.362,
+  "coord": "hand"
+ },
+ {
+  "id": "science-lab",
+  "name_bn": "সায়েন্স ল্যাব",
+  "name_en": "Science Lab",
+  "aliases": [
+   "science laboratory",
+   "সাইন্স ল্যাব",
+   "বিজ্ঞান গবেষণা প্রযুক্তি",
+   "sciencelab",
+   "science lab crossing",
+   "সায়েন্সল্যাব"
+  ],
+  "lat": 23.7388,
+  "lng": 90.3836,
+  "coord": "hand"
+ },
+ {
+  "id": "katabon",
+  "name_bn": "কাটাবন",
+  "name_en": "Katabon",
+  "aliases": [],
+  "lat": 23.73977,
+  "lng": 90.38257,
+  "coord": "osm"
+ },
+ {
+  "id": "bata-signal",
+  "name_bn": "বাটা সিগন্যাল",
+  "name_en": "Bata Signal",
+  "aliases": [],
+  "lat": 23.73908,
+  "lng": 90.38868,
+  "coord": "osm"
+ },
+ {
+  "id": "arambagh",
+  "name_bn": "আরামবাগ নটর ডেম কলেজ",
+  "name_en": "Arambagh",
+  "aliases": [
+   "Arambagh Notre Dame College",
+   "আরামবাগ",
+   "arambag"
+  ],
+  "lat": 23.7365,
+  "lng": 90.42,
+  "coord": "hand"
+ },
+ {
+  "id": "chiriyakhana",
+  "name_bn": "চিরিয়াখানা",
+  "name_en": "Chiriyakhana",
+  "aliases": [
+   "zoo",
+   "mirpur zoo",
+   "চিড়িয়াখানা"
+  ],
+  "lat": 23.8029,
+  "lng": 90.35317,
+  "coord": "osm"
+ },
+ {
+  "id": "taltola",
+  "name_bn": "তালতলা",
+  "name_en": "Taltola",
+  "aliases": [],
+  "lat": 23.78372,
+  "lng": 90.37509,
+  "coord": "osm"
+ },
+ {
+  "id": "rajarbag",
+  "name_bn": "রাজারবাগ",
+  "name_en": "Rajarbag",
+  "aliases": [],
+  "lat": 23.74587,
+  "lng": 90.41218,
+  "coord": "osm"
+ },
+ {
+  "id": "bangla-college",
+  "name_bn": "বাংলা কলেজ",
+  "name_en": "Bangla College",
+  "aliases": [],
+  "lat": 23.78495,
+  "lng": 90.35276,
+  "coord": "osm"
+ },
+ {
+  "id": "darussalam",
+  "name_bn": "দারুস্সালাম",
+  "name_en": "Darussalam",
+  "aliases": [],
+  "lat": 23.78005,
+  "lng": 90.35421,
+  "coord": "osm"
+ },
+ {
+  "id": "dainik-bangla-moor",
+  "name_bn": "দৈনিক বাংলা মোড়",
+  "name_en": "Dainik Bangla Moor",
+  "aliases": [],
+  "lat": 23.73032,
+  "lng": 90.41511,
+  "coord": "osm"
+ },
+ {
+  "id": "sayedabad",
+  "name_bn": "সায়েদাবাদ",
+  "name_en": "Sayedabad",
+  "aliases": [
+   "saidabad",
+   "সায়দাবাদ",
+   "sayedabad bus terminal",
+   "Sayapabad",
+   "সায়াপাবাদ",
+   "shaydabad",
+   "সায়েদাবাদ বাস টার্মিনাল"
+  ],
+  "lat": 23.711,
+  "lng": 90.429,
+  "coord": "hand"
+ },
+ {
+  "id": "manik-nagar",
+  "name_bn": "মানিক নগর",
+  "name_en": "Manik Nagar",
+  "aliases": [],
+  "lat": 23.72249,
+  "lng": 90.42894,
+  "coord": "osm"
+ },
+ {
+  "id": "tt-para",
+  "name_bn": "টিটি পাড়া",
+  "name_en": "TT Para",
+  "aliases": [],
+  "lat": 23.72862,
+  "lng": 90.47883,
+  "coord": "osm"
+ },
+ {
+  "id": "manik-mia-avenue",
+  "name_bn": "মানিক মিয়া এভিনিউ",
+  "name_en": "Manik Mia Avenue",
+  "aliases": [],
+  "lat": 23.75836,
+  "lng": 90.37928,
+  "coord": "osm"
+ },
+ {
+  "id": "maowa",
+  "name_bn": "মাওয়া",
+  "name_en": "Maowa",
+  "aliases": [],
+  "lat": 23.68911,
+  "lng": 90.38654,
+  "coord": "approx"
+ },
+ {
+  "id": "dia-bari",
+  "name_bn": "দিয়া বাড়ি",
+  "name_en": "Dia Bari",
+  "aliases": [],
+  "lat": 23.8738,
+  "lng": 90.3994,
+  "coord": "approx"
+ },
+ {
+  "id": "old-airport",
+  "name_bn": "পুরাতন বিমানবন্দর",
+  "name_en": "Old Airport",
+  "aliases": [],
+  "lat": 23.77219,
+  "lng": 90.39013,
+  "coord": "osm"
+ },
+ {
+  "id": "mirpur-12",
+  "name_bn": "মিরপুর ১২",
+  "name_en": "Mirpur 12",
+  "aliases": [
+   "mirpur twelve",
+   "mirpur-12",
+   "mirpur baro",
+   "মিরপুর বারো",
+   "মিরপুর-১২",
+   "মিরপুর ১২ নম্বর",
+   "মিরপুর বার"
+  ],
+  "lat": 23.8275,
+  "lng": 90.364,
+  "coord": "hand"
+ },
+ {
+  "id": "gulshan-bridge",
+  "name_bn": "গুলশান ব্রিজ",
+  "name_en": "Gulshan Bridge",
+  "aliases": [],
+  "lat": 23.78037,
+  "lng": 90.41292,
+  "coord": "osm"
+ },
+ {
+  "id": "pallabi",
+  "name_bn": "পল্লবী",
+  "name_en": "Pallabi",
+  "aliases": [
+   "polli",
+   "pollobi",
+   "পল্লবি"
+  ],
+  "lat": 23.825,
+  "lng": 90.368,
+  "coord": "hand"
+ },
+ {
+  "id": "dhakeshwari",
+  "name_bn": "ঢাকেশ্বরী",
+  "name_en": "Dhakeshwari",
+  "aliases": [],
+  "lat": 23.72296,
+  "lng": 90.39025,
+  "coord": "osm"
+ },
+ {
+  "id": "matuail",
+  "name_bn": "মাতুয়াইল",
+  "name_en": "Matuail",
+  "aliases": [
+   "matuyail"
+  ],
+  "lat": 23.705,
+  "lng": 90.464,
+  "coord": "hand"
+ },
+ {
+  "id": "rayerbag",
+  "name_bn": "রায়েরবাগ",
+  "name_en": "Rayerbag",
+  "aliases": [
+   "rayer bag"
+  ],
+  "lat": 23.7055,
+  "lng": 90.455,
+  "coord": "hand"
+ },
+ {
+  "id": "chankhar-pul",
+  "name_bn": "চাঁকহার পুল",
+  "name_en": "Chankhar Pul",
+  "aliases": [],
+  "lat": 23.72383,
+  "lng": 90.40034,
+  "coord": "osm"
+ },
+ {
+  "id": "palashi",
+  "name_bn": "পলাশী",
+  "name_en": "Palashi",
+  "aliases": [],
+  "lat": 23.72703,
+  "lng": 90.3898,
+  "coord": "osm"
+ },
+ {
+  "id": "sonargao",
+  "name_bn": "সোনারগাঁও",
+  "name_en": "Sonargao",
+  "aliases": [],
+  "lat": 23.67512,
+  "lng": 90.46413,
+  "coord": "approx"
+ },
+ {
+  "id": "chasara",
+  "name_bn": "চাষারা",
+  "name_en": "Chasara",
+  "aliases": [],
+  "lat": 23.62584,
+  "lng": 90.50089,
+  "coord": "osm"
+ },
+ {
+  "id": "meghna-ghat",
+  "name_bn": "মেঘনা ঘাট",
+  "name_en": "Meghna Ghat",
+  "aliases": [],
+  "lat": 23.62584,
+  "lng": 90.50089,
+  "coord": "approx"
+ },
+ {
+  "id": "kanchpur",
+  "name_bn": "কাঁচপুর",
+  "name_en": "Kanchpur",
+  "aliases": [],
+  "lat": 23.70325,
+  "lng": 90.51728,
+  "coord": "osm"
+ },
+ {
+  "id": "kawlar",
+  "name_bn": "কাওলার",
+  "name_en": "Kawlar",
+  "aliases": [],
+  "lat": 23.84587,
+  "lng": 90.42005,
+  "coord": "osm"
+ },
+ {
+  "id": "elevated-express-way",
+  "name_bn": "এলিভেটেড এক্সপ্রেস ওয়ে",
+  "name_en": "Elevated Express Way",
+  "aliases": [],
+  "lat": 23.80244,
+  "lng": 90.40358,
+  "coord": "approx"
+ },
+ {
+  "id": "khejur-bagan",
+  "name_bn": "খেজুর বাগান",
+  "name_en": "Khejur Bagan",
+  "aliases": [],
+  "lat": 23.76011,
+  "lng": 90.38393,
+  "coord": "osm"
+ },
+ {
+  "id": "songsod-bhaban",
+  "name_bn": "সংসদ ভবন",
+  "name_en": "Songsod Bhaban",
+  "aliases": [],
+  "lat": 23.76311,
+  "lng": 90.38003,
+  "coord": "osm"
+ },
+ {
+  "id": "vulta",
+  "name_bn": "ভুলতা",
+  "name_en": "Vulta",
+  "aliases": [],
+  "lat": 23.75136,
+  "lng": 90.4405,
+  "coord": "approx"
+ },
+ {
+  "id": "kanchan-bridge",
+  "name_bn": "কাঞ্চন ব্রিজ",
+  "name_en": "Kanchan Bridge",
+  "aliases": [],
+  "lat": 23.77541,
+  "lng": 90.40211,
+  "coord": "approx"
+ },
+ {
+  "id": "nila-market",
+  "name_bn": "নীলা মার্কেট",
+  "name_en": "Nila Market",
+  "aliases": [],
+  "lat": 23.78744,
+  "lng": 90.38291,
+  "coord": "approx"
+ },
+ {
+  "id": "300-feet",
+  "name_bn": "৩০০ ফুট",
+  "name_en": "300 Feet",
+  "aliases": [],
+  "lat": 23.79946,
+  "lng": 90.36371,
+  "coord": "osm"
+ },
+ {
+  "id": "bashundhara-300-feet-gate",
+  "name_bn": "বসুন্ধরা - ৩০০ ফিট গেট",
+  "name_en": "Bashundhara (300 Feet Gate)",
+  "aliases": [],
+  "lat": 23.81023,
+  "lng": 90.39261,
+  "coord": "approx"
+ },
+ {
+  "id": "star-kabab",
+  "name_bn": "স্টার কাবাব",
+  "name_en": "Star Kabab",
+  "aliases": [],
+  "lat": 23.73935,
+  "lng": 90.38101,
+  "coord": "osm"
+ },
+ {
+  "id": "dhanmondi",
+  "name_bn": "ধানমন্ডি",
+  "name_en": "Dhanmondi",
+  "aliases": [],
+  "lat": 23.74629,
+  "lng": 90.37776,
+  "coord": "osm"
+ },
+ {
+  "id": "jigatola",
+  "name_bn": "জিগাতলা",
+  "name_en": "Jigatola",
+  "aliases": [
+   "জিগাতোলা",
+   "zigatola",
+   "jigatola bus stand",
+   "ধানমন্ডি পনেরো",
+   "যিগাতলা"
+  ],
+  "lat": 23.7395,
+  "lng": 90.373,
+  "coord": "hand"
+ },
+ {
+  "id": "balughat",
+  "name_bn": "বালুঘাট",
+  "name_en": "Balughat",
+  "aliases": [],
+  "lat": 23.82481,
+  "lng": 90.39368,
+  "coord": "osm"
+ },
+ {
+  "id": "cantonment",
+  "name_bn": "ক্যান্টনমেন্ট",
+  "name_en": "Cantonment",
+  "aliases": [
+   "Garrison (Cantonment)",
+   "গ্যারিসন - ক্যান্টনমেন্ট"
+  ],
+  "lat": 23.79447,
+  "lng": 90.39412,
+  "coord": "osm"
+ },
+ {
+  "id": "vashantek",
+  "name_bn": "ভাসানটেক",
+  "name_en": "Vashantek",
+  "aliases": [],
+  "lat": 23.80585,
+  "lng": 90.38835,
+  "coord": "osm"
+ },
+ {
+  "id": "dhanmondi-15",
+  "name_bn": "ধানমন্ডি ১৫",
+  "name_en": "Dhanmondi 15",
+  "aliases": [],
+  "lat": 23.7383,
+  "lng": 90.38124,
+  "coord": "osm"
+ },
+ {
+  "id": "bosila",
+  "name_bn": "বসিলা",
+  "name_en": "Bosila",
+  "aliases": [],
+  "lat": 23.74509,
+  "lng": 90.34755,
+  "coord": "osm"
+ },
+ {
+  "id": "ghatar-char",
+  "name_bn": "ঘাটার চর",
+  "name_en": "Ghatar Char",
+  "aliases": [],
+  "lat": 23.73624,
+  "lng": 90.33601,
+  "coord": "osm"
+ },
+ {
+  "id": "postogola",
+  "name_bn": "পোস্তগোলা",
+  "name_en": "Postogola",
+  "aliases": [],
+  "lat": 23.69178,
+  "lng": 90.4287,
+  "coord": "osm"
+ },
+ {
+  "id": "dholairpar",
+  "name_bn": "ধলাইড়পাড়",
+  "name_en": "Dholairpar",
+  "aliases": [],
+  "lat": 23.70261,
+  "lng": 90.43534,
+  "coord": "osm"
+ },
+ {
+  "id": "eden-college",
+  "name_bn": "ইডেন কলেজ",
+  "name_en": "Eden College",
+  "aliases": [],
+  "lat": 23.72879,
+  "lng": 90.38711,
+  "coord": "osm"
+ },
+ {
+  "id": "police-plaza",
+  "name_bn": "পুলিস প্লাজা",
+  "name_en": "Police Plaza",
+  "aliases": [],
+  "lat": 23.7723,
+  "lng": 90.41573,
+  "coord": "osm"
+ },
+ {
+  "id": "gulshan-2",
+  "name_bn": "গুলশান ২",
+  "name_en": "Gulshan 2",
+  "aliases": [
+   "gulshan two",
+   "gulshan circle 2",
+   "গুলশান দুই",
+   "গুলশান-২",
+   "গুলশান ২ নম্বর"
+  ],
+  "lat": 23.7948,
+  "lng": 90.4144,
+  "coord": "hand"
+ },
+ {
+  "id": "shib-bari",
+  "name_bn": "শিব বাড়ি",
+  "name_en": "Shib Bari",
+  "aliases": [],
+  "lat": 23.9367,
+  "lng": 90.40985,
+  "coord": "approx"
+ },
+ {
+  "id": "tajmahal-road",
+  "name_bn": "তাজমহল রোড",
+  "name_en": "Tajmahal Road",
+  "aliases": [],
+  "lat": 23.76333,
+  "lng": 90.36221,
+  "coord": "osm"
+ },
+ {
+  "id": "salimullah-road",
+  "name_bn": "সালিমুল্লাহ রোড",
+  "name_en": "Salimullah Road",
+  "aliases": [],
+  "lat": 23.75882,
+  "lng": 90.3635,
+  "coord": "osm"
+ },
+ {
+  "id": "jakir-hossain-road",
+  "name_bn": "জাকির হোসেন রোড",
+  "name_en": "Jakir Hossain Road",
+  "aliases": [],
+  "lat": 23.74909,
+  "lng": 90.37226,
+  "coord": "approx"
+ },
+ {
+  "id": "baitul-mukarram",
+  "name_bn": "বায়তুল মোকাররম",
+  "name_en": "Baitul Mukarram",
+  "aliases": [],
+  "lat": 23.72947,
+  "lng": 90.41262,
+  "coord": "osm"
+ },
+ {
+  "id": "panthopoth",
+  "name_bn": "পান্থপথ",
+  "name_en": "Panthapath",
+  "aliases": [
+   "Panthopoth",
+   "panthopath"
+  ],
+  "lat": 23.7527,
+  "lng": 90.386,
+  "coord": "hand"
+ },
+ {
+  "id": "shankar",
+  "name_bn": "শঙ্কর",
+  "name_en": "Shankar",
+  "aliases": [],
+  "lat": 23.76042,
+  "lng": 90.37299,
+  "coord": "osm"
+ },
+ {
+  "id": "janapoth-moor",
+  "name_bn": "জনপথ মোড়",
+  "name_en": "Janapoth Moor",
+  "aliases": [],
+  "lat": 23.71285,
+  "lng": 90.42849,
+  "coord": "approx"
+ },
+ {
+  "id": "shibu-market",
+  "name_bn": "শিবু মার্কেট",
+  "name_en": "Shibu Market",
+  "aliases": [],
+  "lat": 23.64475,
+  "lng": 90.4934,
+  "coord": "osm"
+ },
+ {
+  "id": "jalkuri",
+  "name_bn": "জলকুড়ি",
+  "name_en": "Jalkuri",
+  "aliases": [],
+  "lat": 23.66372,
+  "lng": 90.48693,
+  "coord": "osm"
+ },
+ {
+  "id": "khilgaon-khidmah-hospital",
+  "name_bn": "খিলগাঁও খিদমাহ হাসপাতাল",
+  "name_en": "Khilgaon Khidmah Hospital",
+  "aliases": [],
+  "lat": 23.74914,
+  "lng": 90.42017,
+  "coord": "osm"
+ },
+ {
+  "id": "metro-hall",
+  "name_bn": "মেট্রো হল",
+  "name_en": "Metro Hall",
+  "aliases": [],
+  "lat": 23.62434,
+  "lng": 90.50479,
+  "coord": "osm"
+ },
+ {
+  "id": "bangladesh-bank",
+  "name_bn": "বাংলাদেশ ব্যাংক",
+  "name_en": "Bangladesh Bank",
+  "aliases": [],
+  "lat": 23.72633,
+  "lng": 90.4228,
+  "coord": "osm"
+ },
+ {
+  "id": "beribadh-tin-rastar-moor",
+  "name_bn": "বেড়িবাঁধ তিন রাস্তার মোড়",
+  "name_en": "Beribadh Tin Rastar Moor",
+  "aliases": [],
+  "lat": 23.76717,
+  "lng": 90.35097,
+  "coord": "approx"
+ },
+ {
+  "id": "rayer-bazar",
+  "name_bn": "রায়ের বাজার",
+  "name_en": "Rayer Bazar",
+  "aliases": [],
+  "lat": 23.75605,
+  "lng": 90.35693,
+  "coord": "osm"
+ },
+ {
+  "id": "sikder-medical-college",
+  "name_bn": "সিকদার মেডিকেল কলেজ",
+  "name_en": "Sikder Medical College",
+  "aliases": [],
+  "lat": 23.74134,
+  "lng": 90.36039,
+  "coord": "osm"
+ },
+ {
+  "id": "hazaribag",
+  "name_bn": "হাজারিবাগ",
+  "name_en": "Hazaribag",
+  "aliases": [],
+  "lat": 23.73372,
+  "lng": 90.35578,
+  "coord": "osm"
+ },
+ {
+  "id": "kamrangirchar",
+  "name_bn": "কামরাঙ্গীরচর",
+  "name_en": "Kamrangirchar",
+  "aliases": [],
+  "lat": 23.71774,
+  "lng": 90.37704,
+  "coord": "osm"
+ },
+ {
+  "id": "showari-ghat",
+  "name_bn": "শোয়ারী ঘাট",
+  "name_en": "Showari Ghat",
+  "aliases": [],
+  "lat": 23.71144,
+  "lng": 90.39433,
+  "coord": "osm"
+ },
+ {
+  "id": "narsinghapur",
+  "name_bn": "নরসিংহপুর",
+  "name_en": "Narsinghapur",
+  "aliases": [],
+  "lat": 23.93178,
+  "lng": 90.30794,
+  "coord": "osm"
+ },
+ {
+  "id": "surabari",
+  "name_bn": "সুরাবাড়ী",
+  "name_en": "Surabari",
+  "aliases": [],
+  "lat": 23.91395,
+  "lng": 90.31945,
+  "coord": "approx"
+ },
+ {
+  "id": "jarun",
+  "name_bn": "যারুন",
+  "name_en": "Jarun",
+  "aliases": [],
+  "lat": 23.90058,
+  "lng": 90.32808,
+  "coord": "approx"
+ },
+ {
+  "id": "khilgaon-flyover",
+  "name_bn": "খিলগাঁও ফ্লাইওভার",
+  "name_en": "Khilgaon flyover",
+  "aliases": [],
+  "lat": 23.74223,
+  "lng": 90.42677,
+  "coord": "osm"
+ },
+ {
+  "id": "golapbagh-chowrasta",
+  "name_bn": "গোলাপবাগ চৌরাস্তা",
+  "name_en": "Golapbagh Chowrasta",
+  "aliases": [],
+  "lat": 23.71729,
+  "lng": 90.42954,
+  "coord": "osm"
+ },
+ {
+  "id": "kazla",
+  "name_bn": "কাজলা",
+  "name_en": "Kazla",
+  "aliases": [],
+  "lat": 23.71116,
+  "lng": 90.4435,
+  "coord": "osm"
+ },
+ {
+  "id": "dayagonj",
+  "name_bn": "দয়াগঞ্জ",
+  "name_en": "Dayagonj",
+  "aliases": [],
+  "lat": 23.71044,
+  "lng": 90.42464,
+  "coord": "osm"
+ },
+ {
+  "id": "dhupkhola",
+  "name_bn": "ধুপখোলা",
+  "name_en": "Dhupkhola",
+  "aliases": [],
+  "lat": 23.70871,
+  "lng": 90.4206,
+  "coord": "osm"
+ },
+ {
+  "id": "ittefaq-moor",
+  "name_bn": "ইত্তেফাক মোড়",
+  "name_en": "Ittefaq Moor",
+  "aliases": [],
+  "lat": 23.72366,
+  "lng": 90.42192,
+  "coord": "approx"
+ },
+ {
+  "id": "tolarbag",
+  "name_bn": "টোলারবাগ",
+  "name_en": "Tolarbag",
+  "aliases": [],
+  "lat": 23.78915,
+  "lng": 90.35259,
+  "coord": "osm"
+ },
+ {
+  "id": "manikganj",
+  "name_bn": "মানিকগঞ্জ",
+  "name_en": "Manikganj",
+  "aliases": [],
+  "lat": 23.86539,
+  "lng": 90.27639,
+  "coord": "approx"
+ },
+ {
+  "id": "paturia",
+  "name_bn": "পাটুরিয়া",
+  "name_en": "Paturia",
+  "aliases": [],
+  "lat": 23.86539,
+  "lng": 90.27639,
+  "coord": "approx"
+ },
+ {
+  "id": "chalantika-mor",
+  "name_bn": "চালানটিকা মোড়",
+  "name_en": "Chalantika Mor",
+  "aliases": [],
+  "lat": 23.80846,
+  "lng": 90.35961,
+  "coord": "approx"
+ },
+ {
+  "id": "mirpur-6",
+  "name_bn": "মিরপুর ৬",
+  "name_en": "Mirpur 6",
+  "aliases": [],
+  "lat": 23.81072,
+  "lng": 90.36423,
+  "coord": "osm"
+ },
+ {
+  "id": "joydebpur",
+  "name_bn": "জয়দেবপুর",
+  "name_en": "Joydebpur",
+  "aliases": [],
+  "lat": 24.00012,
+  "lng": 90.42353,
+  "coord": "osm"
+ },
+ {
+  "id": "sreepur",
+  "name_bn": "শ্রীপুর",
+  "name_en": "Sreepur",
+  "aliases": [],
+  "lat": 24.00012,
+  "lng": 90.42353,
+  "coord": "approx"
+ },
+ {
+  "id": "barmi",
+  "name_bn": "বরমী",
+  "name_en": "Barmi",
+  "aliases": [],
+  "lat": 24.00012,
+  "lng": 90.42353,
+  "coord": "approx"
+ },
+ {
+  "id": "jurain",
+  "name_bn": "জুরাইন",
+  "name_en": "Jurain",
+  "aliases": [],
+  "lat": 23.69625,
+  "lng": 90.43431,
+  "coord": "osm"
+ },
+ {
+  "id": "fakirapul",
+  "name_bn": "ফকিরাপুল",
+  "name_en": "Fakirapul",
+  "aliases": [],
+  "lat": 23.73255,
+  "lng": 90.41699,
+  "coord": "osm"
+ },
+ {
+  "id": "rajendrapur",
+  "name_bn": "রাজেন্দ্রপুর",
+  "name_en": "Rajendrapur",
+  "aliases": [],
+  "lat": 23.66632,
+  "lng": 90.39432,
+  "coord": "osm"
+ },
+ {
+  "id": "tikatuli",
+  "name_bn": "টিকাটুলি",
+  "name_en": "Tikatuli",
+  "aliases": [],
+  "lat": 23.71763,
+  "lng": 90.41967,
+  "coord": "osm"
+ },
+ {
+  "id": "gandaria",
+  "name_bn": "গেন্ডারিয়া",
+  "name_en": "Gandaria",
+  "aliases": [],
+  "lat": 23.70608,
+  "lng": 90.42639,
+  "coord": "osm"
+ },
+ {
+  "id": "idb",
+  "name_bn": "আইডিবি",
+  "name_en": "IDB",
+  "aliases": [],
+  "lat": 23.77875,
+  "lng": 90.37917,
+  "coord": "osm"
+ },
+ {
+  "id": "shimultola",
+  "name_bn": "সিমুলতলা",
+  "name_en": "Shimultola",
+  "aliases": [],
+  "lat": 23.9374,
+  "lng": 90.28571,
+  "coord": "osm"
+ },
+ {
+  "id": "palli-bidyut",
+  "name_bn": "পল্লী বিদ্যুৎ",
+  "name_en": "Palli Bidyut",
+  "aliases": [],
+  "lat": 23.92431,
+  "lng": 90.26324,
+  "coord": "osm"
+ },
+ {
+  "id": "savar-cantonment",
+  "name_bn": "সাভার ক্যান্টনমেন্ট",
+  "name_en": "Savar Cantonment",
+  "aliases": [],
+  "lat": 23.91726,
+  "lng": 90.26039,
+  "coord": "osm"
+ },
+ {
+  "id": "victoria-park",
+  "name_bn": "ভিক্টোরিয়া পার্ক",
+  "name_en": "Victoria Park",
+  "aliases": [],
+  "lat": 23.70921,
+  "lng": 90.41235,
+  "coord": "osm"
+ },
+ {
+  "id": "sanarpar",
+  "name_bn": "সানারপাড়",
+  "name_en": "Sanarpar",
+  "aliases": [],
+  "lat": 23.69691,
+  "lng": 90.49032,
+  "coord": "osm"
+ },
+ {
+  "id": "south-banasree",
+  "name_bn": "দক্ষিণ বনশ্রী",
+  "name_en": "South Banasree",
+  "aliases": [],
+  "lat": 23.75231,
+  "lng": 90.44029,
+  "coord": "osm"
+ },
+ {
+  "id": "shonbari-sreenagar",
+  "name_bn": "শনবাড়ি শ্রীনগর",
+  "name_en": "Shonbari Sreenagar",
+  "aliases": [],
+  "lat": 23.61778,
+  "lng": 90.33413,
+  "coord": "approx"
+ },
+ {
+  "id": "nimtola",
+  "name_bn": "নিমতলা",
+  "name_en": "Nimtola",
+  "aliases": [],
+  "lat": 23.61778,
+  "lng": 90.33413,
+  "coord": "osm"
+ },
+ {
+  "id": "kuchimura",
+  "name_bn": "কুচিমুড়া",
+  "name_en": "Kuchimura",
+  "aliases": [],
+  "lat": 23.64205,
+  "lng": 90.36422,
+  "coord": "approx"
+ },
+ {
+  "id": "hasnabad",
+  "name_bn": "হাসনাবাদ",
+  "name_en": "Hasnabad",
+  "aliases": [],
+  "lat": 23.68264,
+  "lng": 90.42661,
+  "coord": "osm"
+ },
+ {
+  "id": "mirpur-13",
+  "name_bn": "মিরপুর ১৩",
+  "name_en": "Mirpur 13",
+  "aliases": [],
+  "lat": 23.80452,
+  "lng": 90.37656,
+  "coord": "osm"
+ },
+ {
+  "id": "kochukhet",
+  "name_bn": "কচুক্ষেত",
+  "name_en": "Kochukhet",
+  "aliases": [],
+  "lat": 23.79602,
+  "lng": 90.38911,
+  "coord": "osm"
+ },
+ {
+  "id": "workshop",
+  "name_bn": "ওয়ার্কশপ",
+  "name_en": "Workshop",
+  "aliases": [],
+  "lat": 23.75914,
+  "lng": 90.41141,
+  "coord": "osm"
+ },
+ {
+  "id": "saudi-colony",
+  "name_bn": "সৌদি কলোনি",
+  "name_en": "Saudi Colony",
+  "aliases": [],
+  "lat": 23.77834,
+  "lng": 90.38937,
+  "coord": "osm"
+ },
+ {
+  "id": "mirpur-dohs",
+  "name_bn": "মিরপুর - ডিওএইচএস",
+  "name_en": "Mirpur (DOHS)",
+  "aliases": [
+   "mirpur dohs",
+   "মিরপুর ডিওএইচএস"
+  ],
+  "lat": 23.83719,
+  "lng": 90.36898,
+  "coord": "osm"
+ },
+ {
+  "id": "adamjee-school",
+  "name_bn": "আদমজী স্কুল",
+  "name_en": "Adamjee School",
+  "aliases": [],
+  "lat": 23.79348,
+  "lng": 90.3933,
+  "coord": "osm"
+ },
+ {
+  "id": "bot-tola",
+  "name_bn": "বট তলা",
+  "name_en": "Bot tola",
+  "aliases": [],
+  "lat": 23.76013,
+  "lng": 90.39711,
+  "coord": "approx"
+ },
+ {
+  "id": "signal",
+  "name_bn": "সিগন্যাল",
+  "name_en": "Signal",
+  "aliases": [],
+  "lat": 23.81996,
+  "lng": 90.3995,
+  "coord": "osm"
+ },
+ {
+  "id": "cmh",
+  "name_bn": "সিএমএইচ",
+  "name_en": "CMH",
+  "aliases": [],
+  "lat": 23.81433,
+  "lng": 90.39809,
+  "coord": "osm"
+ }
+]
